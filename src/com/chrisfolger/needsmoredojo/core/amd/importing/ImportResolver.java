@@ -5,6 +5,7 @@ import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
 import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
 import com.chrisfolger.needsmoredojo.core.util.FileUtil;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiDirectory;
 import com.intellij.psi.PsiFile;
@@ -15,6 +16,9 @@ import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import javax.print.attribute.standard.MediaSize;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 public class ImportResolver
@@ -193,9 +197,10 @@ public class ImportResolver
      * @param allowCaseInsensitiveSearch if true, you can type "contentpane" and get "ContentPane" and similar things.
      * @return an array of possible files that match the given module name
      */
-    public PsiFile[] getPossibleDojoImportFiles(Project project, String module, boolean prioritizeRelativeImports, boolean allowCaseInsensitiveSearch)
+    public PsiFile[] getPossibleDojoImportFiles(Project project, String module,boolean prioritizeRelativeImports, boolean allowCaseInsensitiveSearch)
     {
-        String actualModuleName = NameResolver.getAMDPluginNameIfPossible(module);
+//        String actualPath = NameResolver.getMergedPath(module, );
+        String actualPath = module;
         Set<PsiFile> allFiles = new HashSet<PsiFile>();
 
         // I decided to allow both case-insensitive and case-sensitive searches at the moment. This is because I did some
@@ -208,7 +213,7 @@ public class ImportResolver
 
         // It doesn't really matter that it takes half a second though, so I will most likely remove the
         // case-insensitive option entirely in future releases. It also took 100ms after the first import due to
-        // caching I assume. 
+        // caching I assume.
         if(!allowCaseInsensitiveSearch)
         {
             PsiFile[] files = null;
@@ -217,39 +222,47 @@ public class ImportResolver
 
             try
             {
-                files = FilenameIndex.getFilesByName(project, actualModuleName + ".js", GlobalSearchScope.projectScope(project));
-                // this will let us search for _TemplatedMixin and friends
-                filesWithUnderscore = FilenameIndex.getFilesByName(project, "_" + actualModuleName + ".js", GlobalSearchScope.projectScope(project));
-                // search for dom-attr and friends when you have typed domAttr
-                String hyphenatedModule = NameResolver.getPossibleHyphenatedModule(module);
-                if(hyphenatedModule != null)
-                {
-                    filesWithHyphenatedVersion = FilenameIndex.getFilesByName(project, hyphenatedModule + ".js", GlobalSearchScope.projectScope(project));
+                if(!actualPath.substring(actualPath.lastIndexOf("/")).contains(".")){
+                    actualPath += ".js";
                 }
+                Path path =  Paths.get(project.getBasePath(), actualPath);
+
+                VirtualFile fileByPathIfCached = LocalFileSystem.getInstance().findFileByPathIfCached(String.valueOf(path));
+                allFiles.add(PsiManager.getInstance(project).findFile(fileByPathIfCached));
             }
             catch(NullPointerException exc)
             {
                 return null;
             }
-
-            for(PsiFile file : files) allFiles.add(file);
-            for(PsiFile file : filesWithUnderscore) allFiles.add(file);
-            for(PsiFile file : filesWithHyphenatedVersion) allFiles.add(file);
         }
-        else
-        {
-            Collection<VirtualFile> results = FilenameIndex.getAllFilesByExt(project, "js", GlobalSearchScope.projectScope(project));
 
-            String baseFilename = actualModuleName + ".js";
-            String underscoreName = "_" + actualModuleName + ".js";
-            String hyphenatedName = NameResolver.getPossibleHyphenatedModule(module) + ".js";
+        PsiFile[] filesArray = allFiles.toArray(new PsiFile[0]);
+        return filesArray;
+    }
 
-            for(VirtualFile file : results)
+
+    /**
+     *
+     * @param project
+     * @param module
+     * @param fileContainingDefine
+     * @param allowCaseInsensitiveSearch
+     * @return
+     */
+    public PsiFile[] getNEJImportFiles(Project project, String module, PsiFile fileContainingDefine, boolean allowCaseInsensitiveSearch)
+    {
+        Path actualPath = NameResolver.getMergedPath(module, fileContainingDefine);
+
+        Set<PsiFile> allFiles = new HashSet<PsiFile>();
+
+        if(!allowCaseInsensitiveSearch) {
+            try {
+                VirtualFile fileByPathIfCached = LocalFileSystem.getInstance().findFileByPathIfCached(String.valueOf(actualPath));
+                allFiles.add(PsiManager.getInstance(project).findFile(fileByPathIfCached));
+            }
+            catch(NullPointerException exc)
             {
-                if(file.getName().equalsIgnoreCase(baseFilename) || file.getName().equalsIgnoreCase(underscoreName) || file.getName().equalsIgnoreCase(hyphenatedName))
-                {
-                    allFiles.add(PsiManager.getInstance(project).findFile(file));
-                }
+                return null;
             }
         }
 

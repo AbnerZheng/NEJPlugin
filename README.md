@@ -8,7 +8,7 @@
 
 ## 期望功能
 
-* 能够解析NEJ.define，解析pro、pool等参数(前提要求，一个工程中只能有一个引入NEJ文件), 使之能够go to definition 和 declartion
+* 能够解析NEJ.define，解析pro、pool等参数(前提要求，一个工程中只能有一个引入NEJ文件), 使之能够go to definition 和 declartion(已实现)
 
 * 解析路径，写NEJ.define是，之后的[]中出入路径能够自动提示路径
 

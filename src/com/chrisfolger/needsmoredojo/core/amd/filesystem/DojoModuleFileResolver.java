@@ -152,22 +152,22 @@ public class DojoModuleFileResolver
     {
         ImportResolver resolver = new ImportResolver();
         String text = defineText.replaceAll("'|\"", "");
-        PsiFile[] possibleFiles = resolver.getPossibleDojoImportFiles(project, NameResolver.getModuleName(text), false, false);
+        PsiFile[] possibleFiles = resolver.getNEJImportFiles(project, NameResolver.getModuleName(text), fileContainingDefine, false);
 
-        LinkedHashMap<String, PsiFile> possibleImportedFiles = resolver.getChoicesFromFiles(possibleFiles,
-                new SourcesLocator().getSourceLibraries(project).toArray(new SourceLibrary[0]),
-                NameResolver.getModuleName(text),
-                fileContainingDefine, false, true);
+//        LinkedHashMap<String, PsiFile> possibleImportedFiles = resolver.getChoicesFromFiles(possibleFiles,
+//                new SourcesLocator().getSourceLibraries(project).toArray(new SourceLibrary[0]),
+//                NameResolver.getModuleName(text),
+//                fileContainingDefine, false, true);
+//
+//        for(String importString : possibleImportedFiles.keySet())
+//        {
+//            if(importString.equals(text))
+//            {
+//                return possibleImportedFiles.get(importString);
+//            }
+//        }
 
-        for(String importString : possibleImportedFiles.keySet())
-        {
-            if(importString.equals(text))
-            {
-                return possibleImportedFiles.get(importString);
-            }
-        }
-
-        return null;
+        return possibleFiles[0];
     }
 
     public PsiFile resolveReferencedFile(Project project, PsiElement define)

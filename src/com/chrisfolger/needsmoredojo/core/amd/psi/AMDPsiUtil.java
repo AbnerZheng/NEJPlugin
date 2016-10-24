@@ -336,8 +336,15 @@ public class AMDPsiUtil
         boolean isNew = psiElement instanceof JSNewExpression || (psiElement.getParent() != null && psiElement.getParent() instanceof JSNewExpression);
         boolean isParameter = psiElement instanceof JSParameter || (psiElement.getParent() != null && psiElement.getParent() instanceof JSParameter);
 
+        boolean isArgument = false;
+        if(psiElement.getParent()!=null){
+            if(psiElement.getParent().getParent()!= null){
+                isArgument = psiElement.getParent().getParent().getParent() instanceof JSArgumentList;
+            }
+        }
+
         // support for reference or new expression
-        if(!(isReference || isNew || isParameter))
+        if(!(isReference || isNew || isParameter || isArgument))
         {
             return null;
         }
@@ -348,6 +355,9 @@ public class AMDPsiUtil
         if(defineStatement == null)
         {
             return null;
+        }
+        if(isArgument){
+            return psiElement;
         }
 
         try

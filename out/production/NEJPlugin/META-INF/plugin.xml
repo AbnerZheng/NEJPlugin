@@ -1,0 +1,224 @@
+<idea-plugin version="2">
+    <id>com.chrisfolger.needsmoredojo</id>
+    <name>Needs More Dojo</name>
+    <version>0.7</version>
+    <vendor email="cefolger@gmail.com" url="http://www.chrisfolger.com">Chris Folger</vendor>
+
+    <description><![CDATA[
+        Tools for working with the dojo toolkit
+            <br>
+            <br>
+            <b>Dojo AMD Module Import Management</b>
+            <ul>
+                <li>Cyclic dependency analysis action and on the fly inspection for cyclic dependencies (inspection must be enabled) </li>
+                <li>Add imports by name instead of module path. Let the plugin insert them for you. Use either absolute or relative path syntax.</li>
+                <li>Remove or reorder import statements </li>
+                <li>Flags unused imports with a strikethrough and allows you to remove them all at once </li>
+                <li>Organize imports alphabetically and remove duplicates </li>
+                <li>Detect inconsistently named imports </li>
+                <li>Convert between absolute and relative path syntax </li>
+                <li>Aware of plugins, modules with resource ids, etc. </li>
+                <li>Supports nested require blocks and snippets of JavaScript in non-js files</li>
+            </ul>
+
+            <b>Refactoring (must be enabled in settings)</b>
+            <ul>
+                <li>Rename dojo AMD modules </li>
+                <li>Move dojo AMD modules </li>
+                <li>Operations update AMD references and paths according to your project's package structure</li>
+            </ul>
+
+            <b>Other Dojo Specific Features </b>
+            <ul>
+                <li>Ctrl+Click supported for dojo/i18n resource strings</li>
+                <li>Ctrl+Click supported for attach points when modules use _TemplatedMixin. Ctrl+Shift+O, A also does this</li>
+                <li>Convert dojo 'util' style to 'class' style or vice-versa</li>
+                <li>Navigate ... declaration supported for modules, methods, and this.inherited references </li>
+            </ul>
+
+        Still very much under development. Please contact me with any feedback!
+      ]]></description>
+
+    <change-notes><![CDATA[
+            <b>0.7 (major release) </b>
+            <ul>
+                <li>Quick fix to add a mismatched import exception </li>
+                <li>Add ability to send an import to the end and beginning of of the list</li>
+                <li>Move most items under the Code menu to a Needs More Dojo submenu </li>
+                <li>Module names using the parent directory as a prefix are no longer flagged as mismatched (see #153)</li>
+                <li>Module naming exceptions work with relative and absolute path references </li>
+                <li>Module naming exceptions can have more than one mapping per module </li>
+                <li>Add new import has been redone to support selection via hotkeys </li>
+                <li>Fix NPE bug caused by templateString references that couldn't be resolved (#148)</li>
+                <li>Find cyclic dependencies action can now be cancelled</li>
+                <li>Bug fixes (#145, #149, #156, #159, #160)</li>
+            </ul>
+
+            <b>0.6.1</b>
+            <ul>
+                <li>Compatibility with IntelliJ IDEA 13.1.1
+            </ul>
+
+            <b>0.6</b>
+            <ul>
+                <li>Move and Rename refactoring is disabled by default</li>
+                <li>Goto declaration is supported for methods that reference AMD modules directly</li>
+                <li>Goto declaration is supported for this.inherited() references and method references off of this(see doc for details)</li>
+                <li>Goto declaration is now supported for AMD module references</li>
+                <li>Require blocks and mixed HTML/JS files now supported for all AMD management functionality</li>
+                <li>Add AMD import is now case-insensitive. Can be case-sensitive if you have a very large project </li>
+                <li>Add option to disable adding an import entry when no module is detected </li>
+                <li>Add quickfixes for for swapping two mismatched imports </li>
+                <li>Add quickfix for ignoring an unused import </li>
+                <li>Add quickfix for removing an unused import </li>
+                <li>Add a configurable list of file types to enable Needs More Dojo for</li>
+                <li>Fix NPE when using auto-completion on i18n keys (#141)</li>
+                <li>Minor bug fixes (#119, #122, #136, #142)</li>
+            </ul>
+
+            <b>0.5.2</b>
+            <ul>
+                <li>Jump to attach point will attempt to resolve absolute file references for templates </li>
+                <li>Fix high priority bug with goto declaration using absolute file paths in templated widgets (#123) </li>
+                <li>Minor bug fixes (#127, #132, #135)</li>
+            </ul>
+
+            <br><br>
+
+            Full change-log is available on the github page.
+      ]]>
+    </change-notes>
+
+    <idea-version since-build="107.105"/>
+
+    <depends>JavaScript</depends>
+    <depends>com.intellij.modules.xml</depends>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <component>
+            <implementation-class>com.chrisfolger.needsmoredojo.intellij.components.DojoSettingsDetectionComponent
+            </implementation-class>
+        </component>
+    </project-components>
+
+    <actions>
+        <group id="com.chrisfolger.needsmoredojo.refactoring">
+            <add-to-group group-id="RefactoringMenu" anchor="first"/>
+
+            <group id="com.chrisfolger.needsmoredojo.refactoring.menu.items">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertoutil" class="com.chrisfolger.needsmoredojo.intellij.actions.ConvertToUtilAction" text="Convert class module to util module" description="Converts a normal dojo class to use the util pattern">
+                </action>
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertclass" class="com.chrisfolger.needsmoredojo.intellij.actions.ConvertToClassAction" text="Convert util module to class module" description="Converts a dojo util module to be an instantiable class">
+                </action>
+            </group>
+
+            <separator/>
+        </group>
+
+        <action id="com.chrisfolger.needsmoredojo.actions.jumptoattachpoint"
+                class="com.chrisfolger.needsmoredojo.intellij.actions.JumpToAttachPointAction" text="Attach Point..."
+                description="Jump to a dojo attach point in the widget's template html file ">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="A"/>
+            <add-to-group group-id="GoToTargetEx"/>
+        </action>
+
+        <group id="com.chrisfolger.needsmoredojo.code" popup="true" text="Needs More Dojo">
+            <add-to-group group-id="CodeMenu" anchor="first"/>
+
+            <group id="com.chrisfolger.needsmoredojo.code.menu.items">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.organizeamdimports" class="com.chrisfolger.needsmoredojo.intellij.actions.OrganizeAMDImportsAction" text="Organize AMD Imports" description="Organizes (reorders) AMD import statements">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="1"/>
+                </action>
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.addimport" class="com.chrisfolger.needsmoredojo.intellij.actions.AddNewImportAction" text="Add new AMD import" description="Add a new AMD import to a dojo module">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="2"/>
+                </action>
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removeunusedimports" class="com.chrisfolger.needsmoredojo.intellij.actions.DeleteAction" text="Remove Unused Imports" description="Removes unused AMD imports">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="3"/>
+                </action>
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removesingleimport" class="com.chrisfolger.needsmoredojo.intellij.actions.DeleteSingleImportAction" text="Remove Selected Import" description="Removes the current AMD import">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="4"/>
+                </action>
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.togglepathsyntax" class="com.chrisfolger.needsmoredojo.intellij.actions.TogglePathSyntaxAction" text="Toggle AMD Import Path Syntax" description="Toggles between absolute and relative path syntax">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="S"/>
+                </action>
+
+                <separator/>
+
+                <action id="com.chrisfolger.needsmoredojo.actions.reorderimport.movedown"
+                        class="com.chrisfolger.needsmoredojo.intellij.actions.MoveImportDownAction" text="Move Import Down"
+                        description="Move an AMD import down in the list">
+                    <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt PAGE_DOWN"/>
+                    <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
+                </action>
+
+                <action id="com.chrisfolger.needsmoredojo.actions.reorderimport.moveup"
+                        class="com.chrisfolger.needsmoredojo.intellij.actions.MoveImportUpAction" text="Move Import Up"
+                        description="Move an AMD import up in the list">
+                    <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt PAGE_UP"/>
+                    <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
+                </action>
+
+                <action id="com.chrisfolger.needsmoredojo.actions.sendtobeginning"
+                        class="com.chrisfolger.needsmoredojo.intellij.actions.SendToBeginningAction" text="Send Import to Beginning"
+                        description="Send an AMD import to the beginning of the list">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="HOME"/>
+                    <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
+                </action>
+
+                <action id="com.chrisfolger.needsmoredojo.actions.sendtoend"
+                        class="com.chrisfolger.needsmoredojo.intellij.actions.SendToEndAction" text="Send Import to End"
+                        description="Send an AMD import to the bottom of the list">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="END"/>
+                    <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
+                </action>
+
+                <separator/>
+
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.findcyclicdependencies" class="com.chrisfolger.needsmoredojo.intellij.actions.FindCyclicDependenciesAction" text="Find Cyclic AMD Dependencies" description="Searches for cyclic dependencies in AMD modules">
+                    <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="C"/>
+                </action>
+            </group>
+        </group>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.MismatchedImportsProvider"/>
+        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.UnusedImportsProvider"/>
+        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.CyclicDependencyProvider"/>
+
+        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.AttachPointGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.ImportGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.ThisInheritedGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.MethodGotoDeclarationHandler"/>
+
+        <!--
+        Removed these until version 0.8
+        <moduleType id="DOJO_TOOLKIT_MODULE" implementationClass="com.chrisfolger.needsmoredojo.intellij.modules.DojoToolkitModuleType" classpathProvider="true"/>
+        <moduleConfigurationEditorProvider implementation="com.chrisfolger.needsmoredojo.intellij.modules.DojoToolkitModuleEditorProvider"/>
+        -->
+
+        <projectConfigurable implementation="com.chrisfolger.needsmoredojo.intellij.configurable.DojoSettingsConfigurable"></projectConfigurable>
+
+        <psi.referenceContributor
+                implementation="com.chrisfolger.needsmoredojo.intellij.reference.NlsLookupReferenceContributor"/>
+
+        <refactoring.elementListenerProvider implementation="com.chrisfolger.needsmoredojo.intellij.refactoring.RenameRefactoringProvider"/>
+        <refactoring.elementListenerProvider implementation="com.chrisfolger.needsmoredojo.intellij.refactoring.MoveRefactoringProvider"/>
+
+        <projectService serviceInterface="com.chrisfolger.needsmoredojo.core.settings.DojoSettings" serviceImplementation="com.chrisfolger.needsmoredojo.core.settings.DojoSettings">
+        </projectService>
+
+        <projectService serviceInterface="com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetectorCache" serviceImplementation="com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetectorCache">
+        </projectService>
+
+        <!-- overrides the default JavaScript unresolved variable inspection so that we are able to resolve attach points. Otherwise there
+            is no way to provide references to attach point variables -->
+        <localInspection language="JavaScript" groupPath="JavaScript" shortName="JSUnresolvedVariable"
+                         key="js.unresolved.variable.inspection.name" groupKey="js.inspection.group.name" enabledByDefault="true"
+                         level="WEAK WARNING" implementationClass="com.chrisfolger.needsmoredojo.intellij.inspections.DojoUnresolvedVariableInspection" unfair="true"/>
+    </extensions>
+</idea-plugin>

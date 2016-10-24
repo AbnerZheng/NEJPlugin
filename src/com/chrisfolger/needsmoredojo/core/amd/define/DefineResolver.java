@@ -190,7 +190,7 @@ public class DefineResolver
             if(parent instanceof JSCallExpression)
             {
                 JSCallExpression statement = (JSCallExpression) parent;
-                if(statement.getMethodExpression() != null && (statement.getMethodExpression().getText().equals("NEJ.define")
+                if(statement.getMethodExpression() != null && (statement.getMethodExpression().getText().equals("define")
                         || statement.getMethodExpression().getText().equals("require")))
                 {
                     return getDefineStatementItemsFromArguments(statement.getArguments(), statement);

@@ -1,11 +1,11 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameException;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
-import com.chrisfolger.needsmoredojo.core.util.JSUtil;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.naming.NameException;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.util.JSUtil;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;

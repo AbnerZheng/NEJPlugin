@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel;
+package com.netease.NEJ.core.amd.objectmodel;
 
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameException;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.amd.naming.NameException;
+import com.netease.NEJ.core.amd.naming.NameResolver;
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.lang.javascript.psi.JSReferenceExpression;
 import com.intellij.psi.PsiElement;

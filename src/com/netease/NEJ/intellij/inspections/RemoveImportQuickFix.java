@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.AMDImport;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.AMDImport;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.lang.javascript.psi.JSElement;

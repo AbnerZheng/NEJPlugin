@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel;
+package com.netease.NEJ.core.amd.objectmodel;
 
 import com.intellij.lang.javascript.psi.JSElement;
 import com.intellij.lang.javascript.psi.JSExpression;

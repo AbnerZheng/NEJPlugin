@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel;
+package com.netease.NEJ.core.amd.objectmodel;
 
-import com.chrisfolger.needsmoredojo.core.amd.CompletionCallback;
+import com.netease.NEJ.core.amd.CompletionCallback;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.psi.PsiFile;
 import org.apache.log4j.Logger;

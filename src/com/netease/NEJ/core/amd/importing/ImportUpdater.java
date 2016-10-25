@@ -1,10 +1,10 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameException;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.refactoring.MatchResult;
-import com.chrisfolger.needsmoredojo.core.util.JSUtil;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.naming.NameException;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.refactoring.MatchResult;
+import com.netease.NEJ.core.util.JSUtil;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;

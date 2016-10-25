@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.intellij.actions.UnusedImportsAction;
+import com.netease.NEJ.intellij.actions.UnusedImportsAction;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.openapi.application.ApplicationManager;

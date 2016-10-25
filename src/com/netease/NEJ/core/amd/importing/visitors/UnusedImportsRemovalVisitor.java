@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing.visitors;
+package com.netease.NEJ.core.amd.importing.visitors;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.psi.PsiElement;
 

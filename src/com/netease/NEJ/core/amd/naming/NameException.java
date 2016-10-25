@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.naming;
+package com.netease.NEJ.core.amd.naming;
 
 public class NameException
 {

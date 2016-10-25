@@ -1,8 +1,8 @@
 <idea-plugin version="2">
-    <id>com.chrisfolger.needsmoredojo</id>
-    <name>Needs More Dojo</name>
-    <version>0.7</version>
-    <vendor email="cefolger@gmail.com" url="http://www.chrisfolger.com">Chris Folger</vendor>
+    <id>com.netease.NEJ</id>
+    <name>NEJ</name>
+    <version>0.0.1</version>
+    <vendor email="abnerzheng@gmail.com" url="">Abner Zheng</vendor>
 
     <description><![CDATA[
         Tools for working with the dojo toolkit
@@ -100,7 +100,7 @@
 
     <project-components>
         <component>
-            <implementation-class>com.chrisfolger.needsmoredojo.intellij.components.DojoSettingsDetectionComponent
+            <implementation-class>com.netease.NEJ.intellij.components.DojoSettingsDetectionComponent
             </implementation-class>
         </component>
     </project-components>
@@ -110,9 +110,9 @@
             <add-to-group group-id="RefactoringMenu" anchor="first"/>
 
             <group id="com.chrisfolger.needsmoredojo.refactoring.menu.items">
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertoutil" class="com.chrisfolger.needsmoredojo.intellij.actions.ConvertToUtilAction" text="Convert class module to util module" description="Converts a normal dojo class to use the util pattern">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertoutil" class="com.netease.NEJ.intellij.actions.ConvertToUtilAction" text="Convert class module to util module" description="Converts a normal dojo class to use the util pattern">
                 </action>
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertclass" class="com.chrisfolger.needsmoredojo.intellij.actions.ConvertToClassAction" text="Convert util module to class module" description="Converts a dojo util module to be an instantiable class">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.convertclass" class="com.netease.NEJ.intellij.actions.ConvertToClassAction" text="Convert util module to class module" description="Converts a dojo util module to be an instantiable class">
                 </action>
             </group>
 
@@ -120,7 +120,7 @@
         </group>
 
         <action id="com.chrisfolger.needsmoredojo.actions.jumptoattachpoint"
-                class="com.chrisfolger.needsmoredojo.intellij.actions.JumpToAttachPointAction" text="Attach Point..."
+                class="com.netease.NEJ.intellij.actions.JumpToAttachPointAction" text="Attach Point..."
                 description="Jump to a dojo attach point in the widget's template html file ">
             <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="A"/>
             <add-to-group group-id="GoToTargetEx"/>
@@ -130,47 +130,47 @@
             <add-to-group group-id="CodeMenu" anchor="first"/>
 
             <group id="com.chrisfolger.needsmoredojo.code.menu.items">
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.organizeamdimports" class="com.chrisfolger.needsmoredojo.intellij.actions.OrganizeAMDImportsAction" text="Organize AMD Imports" description="Organizes (reorders) AMD import statements">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.organizeamdimports" class="com.netease.NEJ.intellij.actions.OrganizeAMDImportsAction" text="Organize AMD Imports" description="Organizes (reorders) AMD import statements">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="1"/>
                 </action>
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.addimport" class="com.chrisfolger.needsmoredojo.intellij.actions.AddNewImportAction" text="Add new AMD import" description="Add a new AMD import to a dojo module">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.addimport" class="com.netease.NEJ.intellij.actions.AddNewImportAction" text="Add new AMD import" description="Add a new AMD import to a dojo module">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="2"/>
                 </action>
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removeunusedimports" class="com.chrisfolger.needsmoredojo.intellij.actions.DeleteAction" text="Remove Unused Imports" description="Removes unused AMD imports">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removeunusedimports" class="com.netease.NEJ.intellij.actions.DeleteAction" text="Remove Unused Imports" description="Removes unused AMD imports">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="3"/>
                 </action>
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removesingleimport" class="com.chrisfolger.needsmoredojo.intellij.actions.DeleteSingleImportAction" text="Remove Selected Import" description="Removes the current AMD import">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.removesingleimport" class="com.netease.NEJ.intellij.actions.DeleteSingleImportAction" text="Remove Selected Import" description="Removes the current AMD import">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="4"/>
                 </action>
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.togglepathsyntax" class="com.chrisfolger.needsmoredojo.intellij.actions.TogglePathSyntaxAction" text="Toggle AMD Import Path Syntax" description="Toggles between absolute and relative path syntax">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.togglepathsyntax" class="com.netease.NEJ.intellij.actions.TogglePathSyntaxAction" text="Toggle AMD Import Path Syntax" description="Toggles between absolute and relative path syntax">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="S"/>
                 </action>
 
                 <separator/>
 
                 <action id="com.chrisfolger.needsmoredojo.actions.reorderimport.movedown"
-                        class="com.chrisfolger.needsmoredojo.intellij.actions.MoveImportDownAction" text="Move Import Down"
+                        class="com.netease.NEJ.intellij.actions.MoveImportDownAction" text="Move Import Down"
                         description="Move an AMD import down in the list">
                     <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt PAGE_DOWN"/>
                     <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
                 </action>
 
                 <action id="com.chrisfolger.needsmoredojo.actions.reorderimport.moveup"
-                        class="com.chrisfolger.needsmoredojo.intellij.actions.MoveImportUpAction" text="Move Import Up"
+                        class="com.netease.NEJ.intellij.actions.MoveImportUpAction" text="Move Import Up"
                         description="Move an AMD import up in the list">
                     <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt PAGE_UP"/>
                     <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
                 </action>
 
                 <action id="com.chrisfolger.needsmoredojo.actions.sendtobeginning"
-                        class="com.chrisfolger.needsmoredojo.intellij.actions.SendToBeginningAction" text="Send Import to Beginning"
+                        class="com.netease.NEJ.intellij.actions.SendToBeginningAction" text="Send Import to Beginning"
                         description="Send an AMD import to the beginning of the list">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="HOME"/>
                     <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
                 </action>
 
                 <action id="com.chrisfolger.needsmoredojo.actions.sendtoend"
-                        class="com.chrisfolger.needsmoredojo.intellij.actions.SendToEndAction" text="Send Import to End"
+                        class="com.netease.NEJ.intellij.actions.SendToEndAction" text="Send Import to End"
                         description="Send an AMD import to the bottom of the list">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="END"/>
                     <add-to-group group-id="CodeMenu" anchor="after" relative-to-action="MoveLineUp"/>
@@ -178,7 +178,7 @@
 
                 <separator/>
 
-                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.findcyclicdependencies" class="com.chrisfolger.needsmoredojo.intellij.actions.FindCyclicDependenciesAction" text="Find Cyclic AMD Dependencies" description="Searches for cyclic dependencies in AMD modules">
+                <action id="com.chrisfolger.needsmoredojo.refactoring.menu.findcyclicdependencies" class="com.netease.NEJ.intellij.actions.FindCyclicDependenciesAction" text="Find Cyclic AMD Dependencies" description="Searches for cyclic dependencies in AMD modules">
                     <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl O" second-keystroke="C"/>
                 </action>
             </group>
@@ -186,39 +186,39 @@
     </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.MismatchedImportsProvider"/>
-        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.UnusedImportsProvider"/>
-        <inspectionToolProvider implementation="com.chrisfolger.needsmoredojo.intellij.inspections.CyclicDependencyProvider"/>
+        <!--<inspectionToolProvider implementation="MismatchedImportsProvider"/>-->
+        <!--<inspectionToolProvider implementation="UnusedImportsProvider"/>-->
+        <!--<inspectionToolProvider implementation="CyclicDependencyProvider"/>-->
 
-        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.AttachPointGotoDeclarationHandler"/>
-        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.ImportGotoDeclarationHandler"/>
-        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.ThisInheritedGotoDeclarationHandler"/>
-        <gotoDeclarationHandler implementation="com.chrisfolger.needsmoredojo.intellij.reference.MethodGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.netease.NEJ.intellij.reference.AttachPointGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.netease.NEJ.intellij.reference.ImportGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.netease.NEJ.intellij.reference.ThisInheritedGotoDeclarationHandler"/>
+        <gotoDeclarationHandler implementation="com.netease.NEJ.intellij.reference.MethodGotoDeclarationHandler"/>
 
         <!--
         Removed these until version 0.8
-        <moduleType id="DOJO_TOOLKIT_MODULE" implementationClass="com.chrisfolger.needsmoredojo.intellij.modules.DojoToolkitModuleType" classpathProvider="true"/>
-        <moduleConfigurationEditorProvider implementation="com.chrisfolger.needsmoredojo.intellij.modules.DojoToolkitModuleEditorProvider"/>
+        <moduleType id="DOJO_TOOLKIT_MODULE" implementationClass="DojoToolkitModuleType" classpathProvider="true"/>
+        <moduleConfigurationEditorProvider implementation="DojoToolkitModuleEditorProvider"/>
         -->
 
-        <projectConfigurable implementation="com.chrisfolger.needsmoredojo.intellij.configurable.DojoSettingsConfigurable"></projectConfigurable>
+        <projectConfigurable implementation="com.netease.NEJ.intellij.configurable.NEJSettingsConfigurable"></projectConfigurable>
 
         <psi.referenceContributor
-                implementation="com.chrisfolger.needsmoredojo.intellij.reference.NlsLookupReferenceContributor"/>
+                implementation="com.netease.NEJ.intellij.reference.NlsLookupReferenceContributor"/>
 
-        <refactoring.elementListenerProvider implementation="com.chrisfolger.needsmoredojo.intellij.refactoring.RenameRefactoringProvider"/>
-        <refactoring.elementListenerProvider implementation="com.chrisfolger.needsmoredojo.intellij.refactoring.MoveRefactoringProvider"/>
+        <refactoring.elementListenerProvider implementation="com.netease.NEJ.intellij.refactoring.RenameRefactoringProvider"/>
+        <refactoring.elementListenerProvider implementation="com.netease.NEJ.intellij.refactoring.MoveRefactoringProvider"/>
 
-        <projectService serviceInterface="com.chrisfolger.needsmoredojo.core.settings.DojoSettings" serviceImplementation="com.chrisfolger.needsmoredojo.core.settings.DojoSettings">
+        <projectService serviceInterface="com.netease.NEJ.core.settings.DojoSettings" serviceImplementation="com.netease.NEJ.core.settings.DojoSettings">
         </projectService>
 
-        <projectService serviceInterface="com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetectorCache" serviceImplementation="com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetectorCache">
+        <projectService serviceInterface="com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache" serviceImplementation="com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache">
         </projectService>
 
         <!-- overrides the default JavaScript unresolved variable inspection so that we are able to resolve attach points. Otherwise there
             is no way to provide references to attach point variables -->
         <localInspection language="JavaScript" groupPath="JavaScript" shortName="JSUnresolvedVariable"
                          key="js.unresolved.variable.inspection.name" groupKey="js.inspection.group.name" enabledByDefault="true"
-                         level="WEAK WARNING" implementationClass="com.chrisfolger.needsmoredojo.intellij.inspections.DojoUnresolvedVariableInspection" unfair="true"/>
+                         level="WEAK WARNING" implementationClass="com.netease.NEJ.intellij.inspections.DojoUnresolvedVariableInspection" unfair="true"/>
     </extensions>
 </idea-plugin>

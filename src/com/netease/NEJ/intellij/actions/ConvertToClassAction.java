@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.refactoring.UtilToClassConverter;
-import com.chrisfolger.needsmoredojo.core.util.PsiFileUtil;
+import com.netease.NEJ.core.refactoring.UtilToClassConverter;
+import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.psi.PsiFile;
 

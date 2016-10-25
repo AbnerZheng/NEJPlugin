@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.reference;
+package com.netease.NEJ.intellij.reference;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.AttachPointResolver;
+import com.netease.NEJ.core.amd.filesystem.AttachPointResolver;
 import com.intellij.codeInsight.navigation.actions.GotoDeclarationHandler;
 import com.intellij.lang.Language;
 import com.intellij.openapi.actionSystem.DataContext;

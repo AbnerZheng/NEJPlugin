@@ -1,10 +1,10 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportReorderer;
-import com.chrisfolger.needsmoredojo.core.amd.importing.InvalidDefineException;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.importing.ImportReorderer;
+import com.netease.NEJ.core.amd.importing.InvalidDefineException;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.openapi.actionSystem.AnActionEvent;

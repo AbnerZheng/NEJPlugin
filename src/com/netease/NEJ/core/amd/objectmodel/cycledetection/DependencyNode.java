@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection;
+package com.netease.NEJ.core.amd.objectmodel.cycledetection;
 
 import com.intellij.psi.PsiFile;
 

@@ -1,8 +1,8 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportBlockEntry;
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportsRemover;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
+import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.codeInspection.InspectionManager;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;

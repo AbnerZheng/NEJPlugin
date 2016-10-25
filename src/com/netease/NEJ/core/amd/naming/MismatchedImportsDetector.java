@@ -1,8 +1,8 @@
-package com.chrisfolger.needsmoredojo.core.amd.naming;
+package com.netease.NEJ.core.amd.naming;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportReorderer;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.AMDValidator;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.importing.ImportReorderer;
+import com.netease.NEJ.core.amd.objectmodel.AMDValidator;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.psi.PsiElement;
 
 import java.util.ArrayList;

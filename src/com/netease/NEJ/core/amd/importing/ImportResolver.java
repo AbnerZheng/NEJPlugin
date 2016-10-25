@@ -1,22 +1,19 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourceLibrary;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.util.FileUtil;
+import com.netease.NEJ.core.amd.filesystem.SourceLibrary;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.util.FileUtil;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiDirectory;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiManager;
-import com.intellij.psi.search.FilenameIndex;
-import com.intellij.psi.search.GlobalSearchScope;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import javax.print.attribute.standard.MediaSize;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;

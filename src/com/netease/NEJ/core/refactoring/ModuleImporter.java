@@ -1,15 +1,15 @@
-package com.chrisfolger.needsmoredojo.core.refactoring;
+package com.netease.NEJ.core.refactoring;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourceLibrary;
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportResolver;
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportUpdater;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameException;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.util.FileUtil;
-import com.chrisfolger.needsmoredojo.core.util.JSUtil;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.filesystem.SourceLibrary;
+import com.netease.NEJ.core.amd.importing.ImportResolver;
+import com.netease.NEJ.core.amd.importing.ImportUpdater;
+import com.netease.NEJ.core.amd.naming.NameException;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.util.FileUtil;
+import com.netease.NEJ.core.util.JSUtil;
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.lang.javascript.psi.JSExpression;
 import com.intellij.openapi.project.Project;

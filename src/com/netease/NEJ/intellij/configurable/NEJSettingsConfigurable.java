@@ -28,7 +28,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Collection;
 
-public class DojoSettingsConfigurable implements Configurable {
+public class NEJSettingsConfigurable implements Configurable {
     private JComponent myComponent;
     private JButton autoDetectDojoSources;
     private JPanel myPanel;

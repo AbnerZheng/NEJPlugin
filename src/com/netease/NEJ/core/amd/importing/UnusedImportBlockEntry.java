@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.psi.PsiElement;

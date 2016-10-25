@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.core.amd.filesystem;
+package com.netease.NEJ.core.amd.filesystem;
 
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.TemplatedWidgetUtil;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.objectmodel.TemplatedWidgetUtil;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.lang.Language;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.editor.Editor;

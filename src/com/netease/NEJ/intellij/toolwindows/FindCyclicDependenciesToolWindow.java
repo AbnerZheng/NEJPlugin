@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.toolwindows;
+package com.netease.NEJ.intellij.toolwindows;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;

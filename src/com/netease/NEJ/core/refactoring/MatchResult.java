@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.refactoring;
+package com.netease.NEJ.core.refactoring;
 
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.psi.PsiFile;

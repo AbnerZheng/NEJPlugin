@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
 public class InvalidDefineException extends Exception
 {

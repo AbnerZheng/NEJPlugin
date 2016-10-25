@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.core.settings;
+package com.netease.NEJ.core.settings;
 
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameException;
+import com.netease.NEJ.core.amd.naming.NameException;
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;

@@ -1,9 +1,9 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.AMDValidator;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.TemplatedWidgetUtil;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
-import com.chrisfolger.needsmoredojo.core.util.HighlightingUtil;
+import com.netease.NEJ.core.amd.objectmodel.AMDValidator;
+import com.netease.NEJ.core.amd.objectmodel.TemplatedWidgetUtil;
+import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.util.HighlightingUtil;
 import com.intellij.lang.javascript.JavaScriptFileType;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;

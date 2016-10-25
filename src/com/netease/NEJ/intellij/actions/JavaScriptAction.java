@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
-import com.chrisfolger.needsmoredojo.core.util.PsiFileUtil;
+import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.components.ServiceManager;

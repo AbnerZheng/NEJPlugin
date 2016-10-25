@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.components;
+package com.netease.NEJ.intellij.components;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationListener;
 import com.intellij.notification.NotificationType;

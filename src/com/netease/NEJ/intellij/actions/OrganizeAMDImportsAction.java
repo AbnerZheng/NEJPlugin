@@ -1,10 +1,10 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.organizer.AMDImportOrganizer;
-import com.chrisfolger.needsmoredojo.core.amd.define.organizer.SortingResult;
-import com.chrisfolger.needsmoredojo.core.amd.importing.InvalidDefineException;
-import com.chrisfolger.needsmoredojo.core.util.PsiFileUtil;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.organizer.AMDImportOrganizer;
+import com.netease.NEJ.core.amd.define.organizer.SortingResult;
+import com.netease.NEJ.core.amd.importing.InvalidDefineException;
+import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;

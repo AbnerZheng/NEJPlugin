@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.openapi.components.ServiceManager;

@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.core.amd.define.organizer;
+package com.netease.NEJ.core.amd.define.organizer;
 
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.lang.javascript.psi.impl.JSChangeUtil;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiComment;

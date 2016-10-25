@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.naming;
+package com.netease.NEJ.core.amd.naming;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;

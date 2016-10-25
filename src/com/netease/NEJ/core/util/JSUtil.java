@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.util;
+package com.netease.NEJ.core.util;
 
 import com.intellij.lang.ASTFactory;
 import com.intellij.lang.ASTNode;

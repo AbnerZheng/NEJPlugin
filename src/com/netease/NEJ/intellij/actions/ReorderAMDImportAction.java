@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportReorderer;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.importing.ImportReorderer;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.LangDataKeys;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;

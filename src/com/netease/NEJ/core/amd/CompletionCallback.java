@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd;
+package com.netease.NEJ.core.amd;
 
 public interface CompletionCallback
 {

@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.core.amd.filesystem;
+package com.netease.NEJ.core.amd.filesystem;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportResolver;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.amd.importing.ImportResolver;
+import com.netease.NEJ.core.amd.naming.NameResolver;
 import com.intellij.lang.javascript.psi.JSArrayLiteralExpression;
 import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.lang.javascript.psi.JSExpression;

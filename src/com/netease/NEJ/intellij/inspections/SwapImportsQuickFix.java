@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportReorderer;
-import com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetector;
+import com.netease.NEJ.core.amd.importing.ImportReorderer;
+import com.netease.NEJ.core.amd.naming.MismatchedImportsDetector;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.openapi.application.ApplicationManager;

@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
 public class DeleteAction extends UnusedImportsAction
 {

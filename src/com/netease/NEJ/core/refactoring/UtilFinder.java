@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.core.refactoring;
+package com.netease.NEJ.core.refactoring;
 
-import com.chrisfolger.needsmoredojo.core.amd.CompletionCallback;
+import com.netease.NEJ.core.amd.CompletionCallback;
 import com.intellij.lang.javascript.psi.*;
 
 import java.util.ArrayList;

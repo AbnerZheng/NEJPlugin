@@ -1,9 +1,9 @@
-package com.chrisfolger.needsmoredojo.core.refactoring;
+package com.netease.NEJ.core.refactoring;
 
-import com.chrisfolger.needsmoredojo.core.amd.CompletionCallback;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.DeclareResolver;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.DeclareStatementItems;
-import com.chrisfolger.needsmoredojo.core.util.JSUtil;
+import com.netease.NEJ.core.amd.CompletionCallback;
+import com.netease.NEJ.core.amd.objectmodel.DeclareResolver;
+import com.netease.NEJ.core.amd.objectmodel.DeclareStatementItems;
+import com.netease.NEJ.core.util.JSUtil;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;

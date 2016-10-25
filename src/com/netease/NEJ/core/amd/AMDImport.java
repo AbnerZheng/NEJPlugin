@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd;
+package com.netease.NEJ.core.amd;
 
 import com.intellij.lang.javascript.psi.JSElement;
 import org.jetbrains.annotations.NotNull;

@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.psi;
+package com.netease.NEJ.core.amd.psi;
 
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.psi.PsiElement;

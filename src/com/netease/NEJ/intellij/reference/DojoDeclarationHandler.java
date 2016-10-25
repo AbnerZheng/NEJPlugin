@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.reference;
+package com.netease.NEJ.intellij.reference;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
 

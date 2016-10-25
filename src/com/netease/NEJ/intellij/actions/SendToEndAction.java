@@ -1,8 +1,8 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.AMDImport;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.AMDImport;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.lang.javascript.JSTokenTypes;
 import com.intellij.lang.javascript.psi.JSArrayLiteralExpression;
 import com.intellij.lang.javascript.psi.JSElement;

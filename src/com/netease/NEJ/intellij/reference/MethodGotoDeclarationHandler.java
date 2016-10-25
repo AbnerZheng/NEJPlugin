@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.reference;
+package com.netease.NEJ.intellij.reference;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.codeInsight.navigation.actions.GotoDeclarationHandler;
 import com.intellij.lang.Language;
 import com.intellij.lang.javascript.psi.JSReferenceExpression;

@@ -1,11 +1,11 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.importing.InvalidDefineException;
-import com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetector;
-import com.chrisfolger.needsmoredojo.core.amd.naming.MismatchedImportsDetectorCache;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.importing.InvalidDefineException;
+import com.netease.NEJ.core.amd.naming.MismatchedImportsDetector;
+import com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.codeInspection.InspectionManager;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;

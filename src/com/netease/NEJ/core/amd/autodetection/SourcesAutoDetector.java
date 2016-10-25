@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.core.amd.autodetection;
+package com.netease.NEJ.core.amd.autodetection;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiFile;
 import com.intellij.psi.search.FilenameIndex;

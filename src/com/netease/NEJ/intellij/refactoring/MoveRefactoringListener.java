@@ -1,11 +1,11 @@
-package com.chrisfolger.needsmoredojo.intellij.refactoring;
+package com.netease.NEJ.intellij.refactoring;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourceLibrary;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.importing.ImportResolver;
-import com.chrisfolger.needsmoredojo.core.refactoring.MatchResult;
-import com.chrisfolger.needsmoredojo.core.refactoring.ModuleImporter;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.filesystem.SourceLibrary;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.importing.ImportResolver;
+import com.netease.NEJ.core.refactoring.MatchResult;
+import com.netease.NEJ.core.refactoring.ModuleImporter;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;

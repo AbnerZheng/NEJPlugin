@@ -1,9 +1,9 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportBlockEntry;
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportsRemover;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
-import com.chrisfolger.needsmoredojo.core.util.PsiFileUtil;
+import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
+import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
+import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.notification.Notifications;

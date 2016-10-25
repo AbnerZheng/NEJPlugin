@@ -1,12 +1,12 @@
-package com.chrisfolger.needsmoredojo.core.amd.psi;
+package com.netease.NEJ.core.amd.psi;
 
-import com.chrisfolger.needsmoredojo.core.amd.AMDImport;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportsRemover;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.DeclareResolver;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.DeclareStatementItems;
+import com.netease.NEJ.core.amd.AMDImport;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
+import com.netease.NEJ.core.amd.objectmodel.DeclareResolver;
+import com.netease.NEJ.core.amd.objectmodel.DeclareStatementItems;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiComment;

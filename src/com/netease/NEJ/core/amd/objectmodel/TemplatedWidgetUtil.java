@@ -1,8 +1,8 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel;
+package com.netease.NEJ.core.amd.objectmodel;
 
-import com.chrisfolger.needsmoredojo.core.amd.CompletionCallback;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.CompletionCallback;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.lang.javascript.psi.JSBinaryExpression;
 import com.intellij.lang.javascript.psi.JSLiteralExpression;
 import com.intellij.lang.javascript.psi.JSProperty;

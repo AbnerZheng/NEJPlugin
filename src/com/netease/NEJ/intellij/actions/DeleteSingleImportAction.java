@@ -1,9 +1,9 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.AMDImport;
-import com.chrisfolger.needsmoredojo.core.amd.define.NearestAMDImportLocator;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
-import com.chrisfolger.needsmoredojo.core.util.PsiFileUtil;
+import com.netease.NEJ.core.amd.AMDImport;
+import com.netease.NEJ.core.amd.define.NearestAMDImportLocator;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.notification.Notifications;

@@ -1,12 +1,12 @@
-package com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection;
+package com.netease.NEJ.core.amd.objectmodel.cycledetection;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportBlockEntry;
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportsRemover;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
+import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;

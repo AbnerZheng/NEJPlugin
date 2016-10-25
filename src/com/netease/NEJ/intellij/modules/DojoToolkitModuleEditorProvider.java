@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.modules;
+package com.netease.NEJ.intellij.modules;
 
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleConfigurationEditor;

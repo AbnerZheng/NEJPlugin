@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.AttachPointResolver;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.filesystem.AttachPointResolver;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.lang.javascript.JSTokenTypes;
 import com.intellij.lang.javascript.inspections.JSUnresolvedVariableInspection;
 import com.intellij.lang.javascript.psi.JSThisExpression;

@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.dialog;
+package com.netease.NEJ.intellij.dialog;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;

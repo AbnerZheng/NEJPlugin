@@ -1,13 +1,13 @@
-package com.chrisfolger.needsmoredojo.core.amd.importing;
+package com.netease.NEJ.core.amd.importing;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineStatement;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourceLibrary;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
-import com.chrisfolger.needsmoredojo.core.util.PsiUtil;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.define.DefineStatement;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.filesystem.SourceLibrary;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.naming.NameResolver;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.util.PsiUtil;
 import com.intellij.lang.javascript.psi.JSArgumentList;
 import com.intellij.lang.javascript.psi.JSLiteralExpression;
 import com.intellij.lang.javascript.psi.JSParameter;

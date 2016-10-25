@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.configurable;
+package com.netease.NEJ.intellij.configurable;
 
 import com.intellij.openapi.project.Project;
 

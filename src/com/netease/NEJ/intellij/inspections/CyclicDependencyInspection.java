@@ -1,9 +1,9 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.define.DefineResolver;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.CyclicDependencyDetector;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.DependencyNode;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.DetectionResult;
+import com.netease.NEJ.core.amd.define.DefineResolver;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.CyclicDependencyDetector;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.DependencyNode;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.DetectionResult;
 import com.intellij.codeInspection.*;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;

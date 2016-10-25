@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.core.amd.define.organizer;
+package com.netease.NEJ.core.amd.define.organizer;
 
 import com.intellij.psi.PsiComment;
 import com.intellij.psi.PsiElement;

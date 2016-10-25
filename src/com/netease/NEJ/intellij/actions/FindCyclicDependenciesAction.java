@@ -1,11 +1,11 @@
-package com.chrisfolger.needsmoredojo.intellij.actions;
+package com.netease.NEJ.intellij.actions;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.DojoModuleFileResolver;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.CyclicDependencyDetector;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.DependencyNode;
-import com.chrisfolger.needsmoredojo.core.amd.objectmodel.cycledetection.DetectionResult;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
-import com.chrisfolger.needsmoredojo.intellij.toolwindows.FindCyclicDependenciesToolWindow;
+import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.CyclicDependencyDetector;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.DependencyNode;
+import com.netease.NEJ.core.amd.objectmodel.cycledetection.DetectionResult;
+import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.intellij.toolwindows.FindCyclicDependenciesToolWindow;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
 import com.intellij.openapi.actionSystem.AnActionEvent;

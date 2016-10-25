@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.reference;
+package com.netease.NEJ.intellij.reference;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.javascript.JavaScriptReferenceContributor;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.openapi.components.ServiceManager;

@@ -1,7 +1,7 @@
-package com.chrisfolger.needsmoredojo.intellij.reference;
+package com.netease.NEJ.intellij.reference;
 
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.amd.psi.AMDPsiUtil;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.amd.psi.AMDPsiUtil;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.*;

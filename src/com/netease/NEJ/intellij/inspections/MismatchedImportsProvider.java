@@ -1,4 +1,4 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
 import com.intellij.codeInspection.InspectionToolProvider;
 

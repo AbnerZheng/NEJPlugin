@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.inspections;
+package com.netease.NEJ.intellij.inspections;
 
-import com.chrisfolger.needsmoredojo.core.amd.importing.UnusedImportsRemover;
+import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.lang.javascript.psi.impl.JSChangeUtil;

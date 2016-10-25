@@ -1,6 +1,6 @@
-package com.chrisfolger.needsmoredojo.intellij.refactoring;
+package com.netease.NEJ.intellij.refactoring;
 
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;

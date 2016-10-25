@@ -1,8 +1,8 @@
-package com.chrisfolger.needsmoredojo.intellij.configurable;
+package com.netease.NEJ.intellij.configurable;
 
-import com.chrisfolger.needsmoredojo.core.amd.autodetection.SourcesAutoDetector;
-import com.chrisfolger.needsmoredojo.core.amd.filesystem.SourcesLocator;
-import com.chrisfolger.needsmoredojo.core.settings.DojoSettings;
+import com.netease.NEJ.core.amd.autodetection.SourcesAutoDetector;
+import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
+import com.netease.NEJ.core.settings.DojoSettings;
 import com.intellij.ide.DataManager;
 import com.intellij.openapi.actionSystem.DataContext;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;

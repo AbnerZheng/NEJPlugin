@@ -85,7 +85,8 @@ public class DeclareResolver
             @Override
             public void visitJSCallExpression(JSCallExpression element)
             {
-                if(!element.getMethodExpression().getText().equals("define"))
+                String text = element.getMethodExpression().getText();
+                if(!text.equals("define") && !text.equals("NEJ.define"))
                 {
                     super.visitJSCallExpression(element);
                     return;

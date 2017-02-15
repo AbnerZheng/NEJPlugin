@@ -1,7 +1,7 @@
 package com.netease.NEJ.intellij.inspections;
 
 import com.netease.NEJ.core.amd.filesystem.AttachPointResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.lang.javascript.JSTokenTypes;
 import com.intellij.lang.javascript.inspections.JSUnresolvedVariableInspection;
 import com.intellij.lang.javascript.psi.JSThisExpression;
@@ -52,7 +52,7 @@ public class DojoUnresolvedVariableInspection extends JSUnresolvedVariableInspec
     @Override
     public boolean isSuppressedFor(@NotNull PsiElement element) {
         Project project = element.getProject();
-        DojoSettings settings = ServiceManager.getService(project, DojoSettings.class);
+        NEJSettings settings = ServiceManager.getService(project, NEJSettings.class);
         if(!settings.isNeedsMoreDojoEnabled())
         {
             return super.isSuppressedFor(element);

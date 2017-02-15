@@ -1,7 +1,7 @@
 package com.netease.NEJ.core.amd.filesystem;
 
 import com.netease.NEJ.core.amd.objectmodel.TemplatedWidgetUtil;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.lang.Language;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.editor.Editor;
@@ -19,7 +19,7 @@ public class AttachPointResolver
             return new PsiElement[0];
         }
 
-        DojoSettings settings = ServiceManager.getService(psiElement.getProject(), DojoSettings.class);
+        NEJSettings settings = ServiceManager.getService(psiElement.getProject(), NEJSettings.class);
         if(!settings.isNeedsMoreDojoEnabled())
         {
             return new PsiElement[0];

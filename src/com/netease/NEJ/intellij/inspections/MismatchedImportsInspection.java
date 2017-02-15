@@ -5,7 +5,7 @@ import com.netease.NEJ.core.amd.importing.InvalidDefineException;
 import com.netease.NEJ.core.amd.naming.MismatchedImportsDetector;
 import com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache;
 import com.netease.NEJ.core.amd.naming.NameResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.codeInspection.InspectionManager;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
@@ -92,8 +92,8 @@ public class MismatchedImportsInspection extends DojoInspection
         LocalQuickFix noFix = null;
         List<MismatchedImportsDetector.Mismatch> mismatches = new MismatchedImportsDetector().matchOnList(blockDefines.toArray(new PsiElement[0]),
                 blockParameters.toArray(new PsiElement[0]),
-                ServiceManager.getService(file.getProject(), DojoSettings.class).getNamingExceptionList(),
-                ServiceManager.getService(file.getProject(), DojoSettings.class),
+                ServiceManager.getService(file.getProject(), NEJSettings.class).getNamingExceptionList(),
+                ServiceManager.getService(file.getProject(), NEJSettings.class),
                 ServiceManager.getService(file.getProject(), MismatchedImportsDetectorCache.class));
         for(int i=0;i<mismatches.size();i++)
         {
@@ -126,7 +126,7 @@ public class MismatchedImportsInspection extends DojoInspection
 
             if(define != null && parameter != null)
             {
-                String normalName = NameResolver.defineToParameter(define.getText(), ServiceManager.getService(define.getProject(), DojoSettings.class).getNamingExceptionList());
+                String normalName = NameResolver.defineToParameter(define.getText(), ServiceManager.getService(define.getProject(), NEJSettings.class).getNamingExceptionList());
                 if(parameterOccurrences.containsKey(normalName))
                 {
                     fix = new MismatchedImportsQuickFix(define, parameter, mismatch.getAbsolutePath());

@@ -4,7 +4,7 @@ import com.netease.NEJ.core.amd.filesystem.SourceLibrary;
 import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
 import com.netease.NEJ.core.amd.importing.ImportResolver;
 import com.netease.NEJ.core.refactoring.ModuleImporter;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.openapi.command.CommandProcessor;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.psi.PsiElement;
@@ -44,7 +44,7 @@ public class RenameRefactoringListener implements RefactoringElementListener {
                         (PsiFile) psiElement,
                         new SourcesLocator().getSourceLibraries(psiElement.getProject()).toArray(new SourceLibrary[0]),
                         ServiceManager.getService(psiElement.getProject(),
-                                DojoSettings.class).getNamingExceptionList())
+                                NEJSettings.class).getNamingExceptionList())
                         .findFilesThatReferenceModule(SourcesLocator.getProjectSourceDirectories(psiElement.getProject(), true), true);
             }
         },

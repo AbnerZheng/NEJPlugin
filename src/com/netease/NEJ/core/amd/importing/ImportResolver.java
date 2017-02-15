@@ -249,6 +249,9 @@ public class ImportResolver
     public PsiFile[] getNEJImportFiles(Project project, String module, PsiFile fileContainingDefine, boolean allowCaseInsensitiveSearch)
     {
         Path actualPath = NameResolver.getMergedPath(module, fileContainingDefine);
+        if(actualPath == null){
+            return null;
+        }
 
         Set<PsiFile> allFiles = new HashSet<PsiFile>();
 

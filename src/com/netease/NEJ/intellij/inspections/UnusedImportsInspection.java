@@ -2,7 +2,7 @@ package com.netease.NEJ.intellij.inspections;
 
 import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
 import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.codeInspection.InspectionManager;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
@@ -69,7 +69,7 @@ public class UnusedImportsInspection extends DojoInspection
         final List<ProblemDescriptor> descriptors = new ArrayList<ProblemDescriptor>();
 
         UnusedImportsRemover detector = new UnusedImportsRemover();
-        List<UnusedImportBlockEntry> results = detector.filterUsedModules(file, ServiceManager.getService(file.getProject(), DojoSettings.class).getRuiImportExceptions());
+        List<UnusedImportBlockEntry> results = detector.filterUsedModules(file, ServiceManager.getService(file.getProject(), NEJSettings.class).getParameterMap());
 
         for(UnusedImportBlockEntry result : results)
         {

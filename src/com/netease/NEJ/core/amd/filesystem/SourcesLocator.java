@@ -1,7 +1,7 @@
 package com.netease.NEJ.core.amd.filesystem;
 
 import com.netease.NEJ.core.amd.naming.NameResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.JarFileSystem;
@@ -85,7 +85,7 @@ public class SourcesLocator
 
     public static @NotNull VirtualFile[] getProjectSourceDirectories(Project project, boolean pullFromSettings)
     {
-        DojoSettings settingsService = ServiceManager.getService(project, DojoSettings.class);
+        NEJSettings settingsService = ServiceManager.getService(project, NEJSettings.class);
         String projectLibrary = settingsService.getProjectSourcesDirectory();
 
         // it's an array in case I decide to add multiple non-dojo source library capability
@@ -123,7 +123,7 @@ public class SourcesLocator
 
     public static @Nullable VirtualFile getDojoSourcesDirectory(Project project, boolean pullFromSettings)
     {
-        DojoSettings settingsService = ServiceManager.getService(project, DojoSettings.class);
+        NEJSettings settingsService = ServiceManager.getService(project, NEJSettings.class);
         String dojoLibrary = settingsService.getDojoSourcesDirectory();
         String projectSources = settingsService.getProjectSourcesDirectory();
 

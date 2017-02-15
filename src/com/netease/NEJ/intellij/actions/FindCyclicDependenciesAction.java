@@ -4,7 +4,7 @@ import com.netease.NEJ.core.amd.filesystem.DojoModuleFileResolver;
 import com.netease.NEJ.core.amd.objectmodel.cycledetection.CyclicDependencyDetector;
 import com.netease.NEJ.core.amd.objectmodel.cycledetection.DependencyNode;
 import com.netease.NEJ.core.amd.objectmodel.cycledetection.DetectionResult;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.intellij.toolwindows.FindCyclicDependenciesToolWindow;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
@@ -68,7 +68,7 @@ public class FindCyclicDependenciesAction extends JavaScriptAction
             return;
         }
 
-        if(!ServiceManager.getService(e.getProject(), DojoSettings.class).isNeedsMoreDojoEnabled())
+        if(!ServiceManager.getService(e.getProject(), NEJSettings.class).isNeedsMoreDojoEnabled())
         {
             e.getPresentation().setEnabled(false);
             return;

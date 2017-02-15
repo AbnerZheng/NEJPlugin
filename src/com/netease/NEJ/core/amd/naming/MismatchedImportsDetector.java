@@ -2,7 +2,7 @@ package com.netease.NEJ.core.amd.naming;
 
 import com.netease.NEJ.core.amd.importing.ImportReorderer;
 import com.netease.NEJ.core.amd.objectmodel.AMDValidator;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.psi.PsiElement;
 
 import java.util.ArrayList;
@@ -42,7 +42,7 @@ public class MismatchedImportsDetector
         }
     }
 
-    public List<Mismatch> matchOnList(PsiElement[] defines, PsiElement[] parameters, List<NameException> exceptions, DojoSettings dojoSettings, MismatchedImportsDetectorCache cache)
+    public List<Mismatch> matchOnList(PsiElement[] defines, PsiElement[] parameters, List<NameException> exceptions, NEJSettings NEJSettings, MismatchedImportsDetectorCache cache)
     {
         List<Mismatch> results = new ArrayList<Mismatch>();
 

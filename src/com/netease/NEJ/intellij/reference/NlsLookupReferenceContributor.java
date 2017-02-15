@@ -1,6 +1,6 @@
 package com.netease.NEJ.intellij.reference;
 
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.javascript.JavaScriptReferenceContributor;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.openapi.components.ServiceManager;
@@ -23,7 +23,7 @@ public class NlsLookupReferenceContributor extends JavaScriptReferenceContributo
             public PsiReference[] getReferencesByElement(@NotNull PsiElement psiElement, @NotNull ProcessingContext processingContext) {
                 PsiElement parent = psiElement.getParent();
 
-                DojoSettings settings = ServiceManager.getService(psiElement.getProject(), DojoSettings.class);
+                NEJSettings settings = ServiceManager.getService(psiElement.getProject(), NEJSettings.class);
                 if(!settings.isNeedsMoreDojoEnabled())
                 {
                     return new PsiReference[0];

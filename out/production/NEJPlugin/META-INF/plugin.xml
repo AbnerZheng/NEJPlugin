@@ -209,7 +209,7 @@
         <refactoring.elementListenerProvider implementation="com.netease.NEJ.intellij.refactoring.RenameRefactoringProvider"/>
         <refactoring.elementListenerProvider implementation="com.netease.NEJ.intellij.refactoring.MoveRefactoringProvider"/>
 
-        <projectService serviceInterface="com.netease.NEJ.core.settings.DojoSettings" serviceImplementation="com.netease.NEJ.core.settings.DojoSettings">
+        <projectService serviceInterface="com.netease.NEJ.core.settings.NEJSettings" serviceImplementation="com.netease.NEJ.core.settings.NEJSettings">
         </projectService>
 
         <projectService serviceInterface="com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache" serviceImplementation="com.netease.NEJ.core.amd.naming.MismatchedImportsDetectorCache">

@@ -1,13 +1,17 @@
 package com.netease.NEJ.core.amd.naming;
 
+import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.roots.ui.configuration.ProjectSettingsService;
 import com.intellij.psi.PsiFile;
+import com.netease.NEJ.core.settings.NEJSettings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class NameResolver {
@@ -118,14 +122,15 @@ public class NameResolver {
      * @author {Abnerzheng}
      */
     public static Path getMergedPath(String module, PsiFile fileContainingDefine) {
-        HashMap<String, String> pathSetting = new HashMap<>();
-        pathSetting.put("eutil", "./node_modules/@study/edu-front-util/src/");
-        pathSetting.put("eui", "./node_modules/@study/edu-front-ui/src/js/");
-        pathSetting.put("rui", "./node_modules/@study/edu-front-regularUI/src/js/");
-        pathSetting.put("own","./src/javascript/com/web/");
-        pathSetting.put("pool", "./lib/");
-        pathSetting.put("pro", "./src/javascript/");
-        pathSetting.put("lib", "./lib/nej/src/");
+        final NEJSettings service = ServiceManager.getService(fileContainingDefine.getProject(), NEJSettings.class);
+        LinkedHashMap<String, String> pathSetting = service.getParameterMap();
+//        pathSetting.put("eutil", "./node_modules/@study/edu-front-util/src/");
+//        pathSetting.put("eui", "./node_modules/@study/edu-front-ui/src/js/");
+//        pathSetting.put("rui", "./node_modules/@study/edu-front-regularUI/src/js/");
+//        pathSetting.put("own","./src/javascript/com/web/");
+//        pathSetting.put("pool", "./lib/");
+//        pathSetting.put("pro", "./src/javascript/");
+//        pathSetting.put("lib", "./lib/nej/src/");
         if(!module.substring(module.lastIndexOf("/")).contains(".")){
             module += ".js";
         }
@@ -137,7 +142,11 @@ public class NameResolver {
         }else if(!(module.startsWith(".") || module.startsWith("/"))){
             return Paths.get(project.getBasePath(), pathSetting.get("lib"),module);
         }else{
-            return Paths.get(fileContainingDefine.getVirtualFile().getParent().getPath ()).resolve(module).normalize();
+            try{
+                return Paths.get(fileContainingDefine.getVirtualFile().getParent().getPath ()).resolve(module).normalize();
+            }catch (NullPointerException e){
+                return null;
+            }
         }
     }
 

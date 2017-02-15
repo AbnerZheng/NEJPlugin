@@ -4,7 +4,7 @@ import com.netease.NEJ.core.amd.define.DefineResolver;
 import com.netease.NEJ.core.amd.define.DefineStatement;
 import com.netease.NEJ.core.amd.importing.ImportCreator;
 import com.netease.NEJ.core.amd.importing.ImportResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.core.util.PsiFileUtil;
 import com.netease.NEJ.intellij.dialog.AddNewImportSelectionDialog;
 import com.intellij.notification.Notification;
@@ -44,7 +44,7 @@ public class AddNewImportAction extends JavaScriptAction
 
         String warning = "";
 
-        String projectSources = ServiceManager.getService(project, DojoSettings.class).getProjectSourcesDirectory();
+        String projectSources = ServiceManager.getService(project, NEJSettings.class).getProjectSourcesDirectory();
         if(projectSources == null || projectSources.equals(""))
         {
             warning += "\n*For best results, configure your project sources in the settings dialog*";
@@ -57,7 +57,7 @@ public class AddNewImportAction extends JavaScriptAction
             return;
         }
 
-        DojoSettings settingsService = ServiceManager.getService(psiFile.getProject(), DojoSettings.class);
+        NEJSettings settingsService = ServiceManager.getService(psiFile.getProject(), NEJSettings.class);
         String[] choices = new ImportResolver().getPossibleDojoImports(psiFile, importModule, settingsService.isPreferRelativeImports(), settingsService.isAddModuleIfThereAreNoneDefined(), settingsService.isAllowCaseInsensitiveSearch());
 
         if(choices.length == 1 && settingsService.isAddModuleIfThereAreNoneDefined())

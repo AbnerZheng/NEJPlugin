@@ -6,7 +6,7 @@ import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
 import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
 import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
 import com.netease.NEJ.core.amd.naming.NameResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
@@ -101,7 +101,7 @@ public class CyclicDependencyDetector
         */
 
         UnusedImportsRemover detector = new UnusedImportsRemover();
-        List<UnusedImportBlockEntry> results = detector.filterUsedModules(psiFile, ServiceManager.getService(psiFile.getProject(), DojoSettings.class).getRuiImportExceptions());
+        List<UnusedImportBlockEntry> results = detector.filterUsedModules(psiFile, ServiceManager.getService(psiFile.getProject(), NEJSettings.class).getParameterMap());
 
         UnusedImportBlockEntry entry = UnusedImportBlockEntry.getDefine(results);
         List<PsiElement> unusedDefines = new ArrayList<PsiElement>();

@@ -1,6 +1,6 @@
 package com.netease.NEJ.intellij.actions;
 
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -21,7 +21,7 @@ public abstract class JavaScriptAction extends AnAction
             return false;
         }
 
-        DojoSettings settings = ServiceManager.getService(file.getProject(), DojoSettings.class);
+        NEJSettings settings = ServiceManager.getService(file.getProject(), NEJSettings.class);
         String[] fileTypes = settings.getSupportedFileTypes().split(",");
         for(String type : fileTypes)
         {
@@ -43,7 +43,7 @@ public abstract class JavaScriptAction extends AnAction
             return;
         }
 
-        if(!ServiceManager.getService(e.getProject(), DojoSettings.class).isNeedsMoreDojoEnabled())
+        if(!ServiceManager.getService(e.getProject(), NEJSettings.class).isNeedsMoreDojoEnabled())
         {
             e.getPresentation().setEnabled(false);
             return;

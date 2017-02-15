@@ -13,17 +13,17 @@ import java.util.Map;
 
 
 @State(
-        name = "NeedsMoreDojoConfiguration",
+        name = "NEJConfiguration",
         storages = {
                 @Storage(id = "default", file = StoragePathMacros.PROJECT_FILE),
-                @Storage(id = "dir", file = StoragePathMacros.PROJECT_CONFIG_DIR + "/needsmoredojoconfig.xml", scheme = StorageScheme.DIRECTORY_BASED)
+                @Storage(id = "dir", file = StoragePathMacros.PROJECT_CONFIG_DIR + "/NEJConfiguration.xml", scheme = StorageScheme.DIRECTORY_BASED)
         }
 )
-public class DojoSettings implements PersistentStateComponent<DojoSettings>
+public class NEJSettings implements PersistentStateComponent<NEJSettings>
 {
-    private static final String CURRENT_VERSION = "0.7";
+    private static final String CURRENT_VERSION = "0.1";
     private LinkedHashMap<String, String> amdImportNamingExceptions;
-    private LinkedHashMap<String, String> ruiImportExceptions;
+    private LinkedHashMap<String, String> parameterMap;
     private List<String> amdImportNamingExceptionsList;
 
     private String dojoSourcesDirectory;
@@ -40,13 +40,10 @@ public class DojoSettings implements PersistentStateComponent<DojoSettings>
     // this will be used for converting to module specific sources later
     private String version;
 
-    public DojoSettings()
+    public NEJSettings()
     {
         setupWarningDisabled = false;
-        ruiImportExceptions = new LinkedHashMap<String, String>();
-        ruiImportExceptions.put("dojox/form/Uploader/IFrame", "IFrame");
-        ruiImportExceptions.put("dojox/form/Uploader/Flash", "Flash");
-        ruiImportExceptions.put("dojox/form/Uploader", "Uploader");
+        parameterMap = new LinkedHashMap<String, String>();
         amdImportNamingExceptionsList = new ArrayList<String>();
         amdImportNamingExceptionsList.add("dojo/sniff(has");
         amdImportNamingExceptionsList.add("doh/main(doh");
@@ -125,12 +122,12 @@ public class DojoSettings implements PersistentStateComponent<DojoSettings>
         this.preferRelativeImports = preferRelativeImports;
     }
 
-    public LinkedHashMap<String, String> getRuiImportExceptions() {
-        return ruiImportExceptions;
+    public LinkedHashMap<String, String> getParameterMap() {
+        return parameterMap;
     }
 
-    public void setRuiImportExceptions(LinkedHashMap<String, String> ruiImportExceptions) {
-        this.ruiImportExceptions = ruiImportExceptions;
+    public void setParameterMap(LinkedHashMap<String, String> parameterMap) {
+        this.parameterMap = parameterMap;
     }
 
     public boolean isDojoSourcesShareProjectSourcesRoot() {
@@ -159,12 +156,12 @@ public class DojoSettings implements PersistentStateComponent<DojoSettings>
 
     @Nullable
     @Override
-    public DojoSettings getState() {
+    public NEJSettings getState() {
         return this;
     }
 
     @Override
-    public void loadState(DojoSettings state) {
+    public void loadState(NEJSettings state) {
         XmlSerializerUtil.copyBean(state, this);
     }
 

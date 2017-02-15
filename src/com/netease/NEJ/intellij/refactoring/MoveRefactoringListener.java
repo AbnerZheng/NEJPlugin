@@ -5,7 +5,7 @@ import com.netease.NEJ.core.amd.filesystem.SourcesLocator;
 import com.netease.NEJ.core.amd.importing.ImportResolver;
 import com.netease.NEJ.core.refactoring.MatchResult;
 import com.netease.NEJ.core.refactoring.ModuleImporter;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
@@ -33,7 +33,7 @@ public class MoveRefactoringListener implements RefactoringElementListener
                 originalPsiFile,
                 new SourcesLocator().getSourceLibraries(originalPsiFile.getProject()).toArray(new SourceLibrary[0]),
                 ServiceManager.getService(originalPsiFile.getProject(),
-                        DojoSettings.class).getNamingExceptionList());
+                        NEJSettings.class).getNamingExceptionList());
 
 
         moduleReferences = renamer.findFilesThatModuleReferences(originalPsiFile);

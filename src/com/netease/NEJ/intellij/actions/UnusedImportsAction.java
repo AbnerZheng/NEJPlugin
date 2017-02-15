@@ -2,7 +2,7 @@ package com.netease.NEJ.intellij.actions;
 
 import com.netease.NEJ.core.amd.importing.UnusedImportBlockEntry;
 import com.netease.NEJ.core.amd.importing.UnusedImportsRemover;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.core.util.PsiFileUtil;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
@@ -25,7 +25,7 @@ public class UnusedImportsAction extends JavaScriptAction {
     public static void removeUnusedImports(PsiFile psiFile)
     {
         final UnusedImportsRemover detector = new UnusedImportsRemover();
-        final List<UnusedImportBlockEntry> results = detector.filterUsedModules(psiFile, ServiceManager.getService(psiFile.getProject(), DojoSettings.class).getRuiImportExceptions());
+        final List<UnusedImportBlockEntry> results = detector.filterUsedModules(psiFile, ServiceManager.getService(psiFile.getProject(), NEJSettings.class).getParameterMap());
 
         int numDeleted = 0;
 

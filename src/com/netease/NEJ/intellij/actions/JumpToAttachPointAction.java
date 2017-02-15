@@ -2,7 +2,7 @@ package com.netease.NEJ.intellij.actions;
 
 import com.netease.NEJ.core.amd.objectmodel.AMDValidator;
 import com.netease.NEJ.core.amd.objectmodel.TemplatedWidgetUtil;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.core.util.HighlightingUtil;
 import com.intellij.lang.javascript.JavaScriptFileType;
 import com.intellij.notification.Notification;
@@ -109,7 +109,7 @@ public class JumpToAttachPointAction extends JavaScriptAction
             return;
         }
 
-        if(!ServiceManager.getService(file.getProject(), DojoSettings.class).isNeedsMoreDojoEnabled())
+        if(!ServiceManager.getService(file.getProject(), NEJSettings.class).isNeedsMoreDojoEnabled())
         {
             e.getPresentation().setEnabled(false);
             return;

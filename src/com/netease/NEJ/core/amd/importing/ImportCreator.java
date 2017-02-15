@@ -4,7 +4,7 @@ import com.netease.NEJ.core.amd.define.DefineResolver;
 import com.netease.NEJ.core.amd.define.DefineStatement;
 import com.netease.NEJ.core.amd.naming.NameException;
 import com.netease.NEJ.core.amd.naming.NameResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.netease.NEJ.core.util.JSUtil;
 import com.intellij.lang.javascript.psi.*;
 import com.intellij.notification.Notification;
@@ -93,7 +93,7 @@ public class ImportCreator
 
     public void createImport(String module, String quoteCharacter, JSArrayLiteralExpression imports, JSParameterList parameters)
     {
-        List<NameException> exceptionsMap = ServiceManager.getService(parameters.getProject(), DojoSettings.class).getNamingExceptionList();
+        List<NameException> exceptionsMap = ServiceManager.getService(parameters.getProject(), NEJSettings.class).getNamingExceptionList();
         String parameter = NameResolver.defineToParameter(module, exceptionsMap);
 
         // if the parameter would cause a duplicate, then assume it is a module with a different path but the same name
@@ -150,7 +150,7 @@ public class ImportCreator
 
     public boolean addImport(final PsiFile file, final String module, DefineStatement statementToAddTo)
     {
-        DojoSettings settings = ServiceManager.getService( file.getProject(), DojoSettings.class);
+        NEJSettings settings = ServiceManager.getService( file.getProject(), NEJSettings.class);
         String quoteCharacter = settings.isSingleQuotedModuleIDs() ? "'" : "\"";
         createImport(module, quoteCharacter, statementToAddTo.getArguments(), statementToAddTo.getFunction().getParameterList());
         return true;

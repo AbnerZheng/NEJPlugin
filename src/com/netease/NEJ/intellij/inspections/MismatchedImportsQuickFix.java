@@ -2,7 +2,7 @@ package com.netease.NEJ.intellij.inspections;
 
 import com.netease.NEJ.core.amd.naming.NameException;
 import com.netease.NEJ.core.amd.naming.NameResolver;
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.openapi.application.ApplicationManager;
@@ -33,7 +33,7 @@ public class MismatchedImportsQuickFix implements LocalQuickFix {
         this.define = define;
         this.parameter = parameter;
 
-        amdImportNamingExceptions = ServiceManager.getService(define.getProject(), DojoSettings.class).getNamingExceptionList();
+        amdImportNamingExceptions = ServiceManager.getService(define.getProject(), NEJSettings.class).getNamingExceptionList();
         this.newParameterName = NameResolver.defineToParameter(define.getText(), amdImportNamingExceptions);
 
         if(parameter != null && absolutePath != null)

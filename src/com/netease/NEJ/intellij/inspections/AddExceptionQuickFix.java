@@ -1,6 +1,6 @@
 package com.netease.NEJ.intellij.inspections;
 
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.codeInspection.LocalQuickFix;
 import com.intellij.codeInspection.ProblemDescriptor;
 import com.intellij.openapi.components.ServiceManager;
@@ -44,11 +44,11 @@ public class AddExceptionQuickFix implements LocalQuickFix
     {
         if(absolutePath != null)
         {
-            ServiceManager.getService(project, DojoSettings.class).getAmdImportNamingExceptionsList().add(absolutePath + "(" +  parameter.getText());
+            ServiceManager.getService(project, NEJSettings.class).getAmdImportNamingExceptionsList().add(absolutePath + "(" +  parameter.getText());
         }
         else
         {
-            ServiceManager.getService(project, DojoSettings.class).getAmdImportNamingExceptionsList().add(define.getText().replaceAll("\"|'", "") + "(" +  parameter.getText());
+            ServiceManager.getService(project, NEJSettings.class).getAmdImportNamingExceptionsList().add(define.getText().replaceAll("\"|'", "") + "(" +  parameter.getText());
         }
     }
 }

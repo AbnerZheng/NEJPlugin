@@ -1,6 +1,6 @@
 package com.netease.NEJ.intellij.refactoring;
 
-import com.netease.NEJ.core.settings.DojoSettings;
+import com.netease.NEJ.core.settings.NEJSettings;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
@@ -20,12 +20,12 @@ public class RenameRefactoringProvider implements RefactoringElementListenerProv
         PsiFile file = (PsiFile) psiElement;
         String extension = file.getVirtualFile().getExtension();
 
-        if(!ServiceManager.getService(file.getProject(), DojoSettings.class).isNeedsMoreDojoEnabled())
+        if(!ServiceManager.getService(file.getProject(), NEJSettings.class).isNeedsMoreDojoEnabled())
         {
             return null; // don't want to refactor if we've disabled Needs More Dojo.
         }
 
-        if(!ServiceManager.getService(file.getProject(), DojoSettings.class).isRefactoringEnabled())
+        if(!ServiceManager.getService(file.getProject(), NEJSettings.class).isRefactoringEnabled())
         {
             return null;
         }

@@ -2,7 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09afb05-1297-4b53-9f49-0a1acbb3235c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/netease/NEJ/core/define/DefineDepPathTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineStatement.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/HighlightingUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/JSUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableBuilder.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/AMDImport.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/AMDImport.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/CompletionCallback.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/CompletionCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/autodetection/SourcesAutoDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/autodetection/SourcesAutoDetector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/NearestAMDImportLocator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/NearestAMDImportLocator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/AMDImportOrganizer.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/AMDImportOrganizer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortItem.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortItem.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortedPsiElementAdapter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortedPsiElementAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortingResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortingResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/AttachPointResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/AttachPointResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/DojoModuleFileResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/DojoModuleFileResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/SourceLibrary.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/SourceLibrary.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/SourcesLocator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/SourcesLocator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportCreator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportCreator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportReorderer.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportReorderer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportUpdater.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportUpdater.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/InvalidDefineException.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/InvalidDefineException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/UnusedImportBlockEntry.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/UnusedImportBlockEntry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/UnusedImportsRemover.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/UnusedImportsRemover.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/visitors/UnusedImportsRemovalVisitor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/visitors/UnusedImportsRemovalVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/MismatchedImportsDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/MismatchedImportsDetector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/MismatchedImportsDetectorCache.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/MismatchedImportsDetectorCache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameException.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/NameException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/NameResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/AMDValidator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/AMDValidator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/DeclareResolver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareStatementItems.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/DeclareStatementItems.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/TemplatedWidgetUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/TemplatedWidgetUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/CyclicDependencyDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/CyclicDependencyDetector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/DependencyNode.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/DependencyNode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/DetectionResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/DetectionResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/AMDPsiUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/psi/AMDPsiUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/JSMethodLookupVisitor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/psi/JSMethodLookupVisitor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/ClassToUtilConverter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/ClassToUtilConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/MatchResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/MatchResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/ModuleImporter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/ModuleImporter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/UtilFinder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/UtilFinder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/UtilToClassConverter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/UtilToClassConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/FileUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/FileUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/PsiFileUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/PsiFileUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/PsiUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/PsiUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/AddNewImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/AddNewImportAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ConvertToClassAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ConvertToClassAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ConvertToUtilAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ConvertToUtilAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/DeleteAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/DeleteAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/DeleteSingleImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/DeleteSingleImportAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/FindCyclicDependenciesAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/FindCyclicDependenciesAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/JavaScriptAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/JavaScriptAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/JumpToAttachPointAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/JumpToAttachPointAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/MoveImportDownAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/MoveImportDownAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/MoveImportUpAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/MoveImportUpAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/OrganizeAMDImportsAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/OrganizeAMDImportsAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ReorderAMDImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ReorderAMDImportAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToBeginningAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToBeginningAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToEndAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToEndAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/TogglePathSyntaxAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/TogglePathSyntaxAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/UnusedImportsAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/UnusedImportsAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/components/DojoSettingsDetectionComponent.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/components/DojoSettingsDetectionComponent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsListTableBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsTableBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableModel.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsTableModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.form" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/NEJSettingsConfigurable.form" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/NEJSettingsConfigurable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableHead.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableHead.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/dialog/AddNewImportSelectionDialog.form" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/dialog/AddNewImportSelectionDialog.form" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/dialog/AddNewImportSelectionDialog.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/dialog/AddNewImportSelectionDialog.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/AddExceptionQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/AddExceptionQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/CyclicDependencyInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/CyclicDependencyInspection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/CyclicDependencyProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/CyclicDependencyProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/DojoInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/DojoInspection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/DojoUnresolvedVariableInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/DojoUnresolvedVariableInspection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/IgnoreImportQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/IgnoreImportQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsInspection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/RemoveImportQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/RemoveImportQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/RemoveUnusedImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/RemoveUnusedImportsQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/SwapImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/SwapImportsQuickFix.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/UnusedImportsInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/UnusedImportsInspection.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/UnusedImportsProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/UnusedImportsProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleEditorProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleEditorProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleType.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/MoveRefactoringListener.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/MoveRefactoringListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/MoveRefactoringProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/MoveRefactoringProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/RenameRefactoringListener.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/RenameRefactoringListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/RenameRefactoringProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/RenameRefactoringProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/AttachPointGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/AttachPointGotoDeclarationHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/DojoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/DojoDeclarationHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/ImportGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/ImportGotoDeclarationHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/MethodGotoDeclarationHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/NlsLookupReference.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/NlsLookupReference.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/NlsLookupReferenceContributor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/NlsLookupReferenceContributor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/ThisInheritedGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/ThisInheritedGotoDeclarationHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/toolwindows/FindCyclicDependenciesToolWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEJPlugin.iml" afterPath="$PROJECT_DIR$/NEJPlugin.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" />
     </list>
     <ignored path="NEJPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,25 +136,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefineResolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java">
+      <file leaf-file-name="DefinePathReference.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="75">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#2469#2484#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/platform-impl/src/com/intellij/openapi/application/impl/ApplicationImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="255">
-                <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="DefineDepPath.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1062">
+              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#3629#3630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompletionData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4125">
+              <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LegacyCompletionContributor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/LegacyCompletionContributor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompletionService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinePathPsiReferenceContributor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinePathPsiReferenceProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReferenceProvidersRegistryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/core-impl/src/com/intellij/psi/impl/source/resolve/reference/ReferenceProvidersRegistryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1425">
+              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PsiReferenceBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/psi/PsiReferenceBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#6693#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,6 +255,7 @@
         <option value="Action" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -65,6 +265,17 @@
       <find>parameterMapNow</find>
       <find>addButton</find>
       <find>parameterMap</find>
+      <find>getDefineStatementItemsFromArguments</find>
+      <find>getDeclareObject</find>
+      <find>getDefineVisitorToRetrieveDeclareObject</find>
+      <find>Declare</find>
+      <find>DeclareResolver</find>
+      <find>getAllImportBlocks</find>
+      <find>pa</find>
+      <find>path</find>
+      <find>findExtension</find>
+      <find>prefix</find>
+      <find>create</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,37 +289,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleParserDefinition.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleIcons.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleSyntaxHighlighter.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleSyntaxHighlighterFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleColorSettingsPage.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/psi/SimpleElementFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/psi/SimpleNamedElement.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/psi/SimplePsiImplUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/psi/SimpleNamedElementImpl.java" />
-        <option value="$PROJECT_DIR$/gen/com/simpleplugin/psi/SimpleProperty.java" />
-        <option value="$PROJECT_DIR$/gen/com/simpleplugin/psi/SimpleTypes.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleAnnotator.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/CreatePropertyQuickFix.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleLineMarkerProvider.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleCompletionContributor.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/Simple.bnf" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleReferenceProviders.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleReferenceContributor.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleReference.java" />
-        <option value="$PROJECT_DIR$/gen/com/simpleplugin/psi/impl/SimplePropertyImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/simpleplugin/SimpleRefactoringSupportProvider.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/importing/ImportCreator.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/refactoring/UtilFinder.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/importing/ImportReorderer.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/importing/visitors/UnusedImportsRemovalVisitor.java" />
-        <option value="$PROJECT_DIR$/src/hehe.html" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/intellij/configurable/DojoSettings.form" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/define/DefineResolver.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/filesystem/DojoModuleFileResolver.java" />
-        <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/importing/ImportResolver.java" />
         <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/naming/NameResolver.java" />
         <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/psi/AMDPsiUtil.java" />
         <option value="$PROJECT_DIR$/src/com/chrisfolger/needsmoredojo/core/amd/objectmodel/DeclareResolver.java" />
@@ -120,15 +300,46 @@
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableHead.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettings.form" />
-        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameResolver.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/components/DojoSettingsDetectionComponent.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.form" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableBuilder.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineStatement.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathCompletionProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathCompletionContributor.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathPsiReferenceContributor.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathInsertHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathLookUpElemGenerator.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameResolver.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathPsiReferenceProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/utils/NEJUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/completions/DefinePathReference.java" />
+        <option value="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/UtilFinder.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/settings/NEJSettings.java" />
+        <option value="$APPLICATION_HOME_DIR$/lib/resources.jar!/META-INF/PlatformExtensionPoints.xml" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/settings/ParameterTableBuilder.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/settings/NEJSettingsConfigurable.form" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/settings/NEJSettingsConfigurable.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/ParameterTableModel.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableModel.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/liveTemplates/javascript.xml" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/liveTemplates/javascript_iterations.xml" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/languageService/typescript/node.d.ts" />
+        <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefinePathInsertHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineStatement.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPathTest.java" />
+        <option value="$PROJECT_DIR$/test/com/netease/NEJ/core/define/DefineDepPathTest.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
       </list>
     </option>
   </component>
@@ -155,16 +366,25 @@
             <id />
           </State>
           <State>
+            <id>Java</id>
+          </State>
+          <State>
             <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PluginXmlValidity</id>
+            <id>IgnoreResultOfCall</id>
           </State>
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -181,7 +401,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,21 +423,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="define" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NEJPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NEJPlugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="old_do_more_dojo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,11 +473,291 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="importing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="define" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="define" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="organizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="old_do_more_dojo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autodetection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="completions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="define" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,21 +777,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$USER_HOME$/uc-berkeley/intellij-community-162.2228" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="NEJSettingsConfigurable&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java&#10;w&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java&#10;plugi&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plugin.&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plugin&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plug&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;getMergedPath&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;merge&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;SimpleIcon&#9;PSI&#9;JAVA://com.simpleplugin.SimpleIcons&#10;SimpleIcons&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/simpleplugin/SimpleIcons.java&#10;bnf&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEI/Simple.bnf&#10;ideAc&#9;PSI&#9;JAVA://com.intellij.openapi.actionSystem.IdeActions" />
+    <property name="SearchEverywhereHistoryKey" value="PropertyReferenceBase&#9;FILE&#9;file:///Users/abnerzheng/idea/idea2/plugins/properties/properties-psi-impl/src/com/intellij/lang/properties/references/PropertyReferenceBase.java&#10;findImplicitExtension&#9;PSI&#9;JAVA://com.intellij.javascript.JSFileReference#findImplicitExtension&#10;plugi&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plugin&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;ProjectComponent&#9;PSI&#9;JAVA://com.intellij.openapi.components.ProjectComponent&#10;NEJSettingsConfigurable&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java&#10;w&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java&#10;plugin.&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plug&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;getMergedPath&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;merge&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;SimpleIcon&#9;PSI&#9;JAVA://com.simpleplugin.SimpleIcons&#10;SimpleIcons&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/simpleplugin/SimpleIcons.java&#10;bnf&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEI/Simple.bnf&#10;ideAc&#9;PSI&#9;JAVA://com.intellij.openapi.actionSystem.IdeActions" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/simpleplugin" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
@@ -281,6 +802,7 @@
     <property name="FullScreen" value="true" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.3.0/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -291,18 +813,54 @@
     <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.netease.NEJ.core.define" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.netease.NEI" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.netease.NEJ.intellij.completions" />
       <recent name="com.simpleplugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/netease/NEJ/core/define" />
+      <recent name="$PROJECT_DIR$/src/com/netease/NEJ/settings" />
+      <recent name="$PROJECT_DIR$/src/com/netease/NEJ" />
+      <recent name="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable" />
+      <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Plugin.Plugin">
+    <configuration default="false" name="DefineDepPathTest.resolve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.netease.NEJ.core.define.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NEJPlugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.netease.NEJ.core.define" />
+      <option name="MAIN_CLASS_NAME" value="com.netease.NEJ.core.define.DefineDepPathTest" />
+      <option name="METHOD_NAME" value="resolve" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="NEJPlugin" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -711,9 +1269,15 @@
       <log_file path="$USER_HOME$/Library/Caches/IntelliJIdea2016.2/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Plugin.Plugin" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DefineDepPathTest.resolve" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DefineDepPathTest.resolve" />
+      </list>
+    </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -778,12 +1342,48 @@
       <workItem from="1479266624207" duration="214000" />
       <workItem from="1479268201113" duration="810000" />
       <workItem from="1487141475669" duration="7103000" />
-      <workItem from="1487150828347" duration="103000" />
+      <workItem from="1487150828347" duration="10390000" />
+      <workItem from="1487229204862" duration="5679000" />
+      <workItem from="1487235970836" duration="7092000" />
+      <workItem from="1487315382438" duration="13685000" />
+      <workItem from="1487561176534" duration="1693000" />
+      <workItem from="1487604572635" duration="372000" />
+      <workItem from="1487647317309" duration="29503000" />
+      <workItem from="1487755166896" duration="1155000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 14h 06m 03s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 14h 08m 24s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 14h 09m 49s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 14h 10m 51s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 14h 45m 13s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefineDepPathTest_resolve - 2017.02.21 at 15h 33m 47s.xml">
+      <configuration name="DefineDepPathTest.resolve" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88618000" />
+    <option name="totallyTimeSpent" value="158084000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -802,25 +1402,25 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3479452" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31506848" sideWeight="0.48322147" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31506848" sideWeight="0.48322147" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28029078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -886,213 +1486,158 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/netease/NEI/intellig/HelloWorldAction.java</url>
           <line>28</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/netease/NEI/intellig/HelloWorldAction.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/simpleplugin/SimpleReference.java</url>
           <line>56</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/uc-berkeley/ideaIC-143.2370.31/platform/lang-api/src/com/intellij/codeInsight/lookup/LookupElementBuilder.java</url>
           <line>84</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/NearestAMDImportLocator.java</url>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/NearestAMDImportLocator.java</url>
           <line>22</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>102</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>109</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>107</line>
           <properties />
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>122</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>247</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>154</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>255</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>244</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java</url>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportResolver.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java</url>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportResolver.java</url>
           <line>198</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/MismatchedImportsDetector.java</url>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/MismatchedImportsDetector.java</url>
           <line>46</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java</url>
-          <line>217</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/AMDPsiUtil.java</url>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/psi/AMDPsiUtil.java</url>
           <line>439</line>
           <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>87</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java</url>
-          <line>133</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/AMDValidator.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/autodetection/SourcesAutoDetector.java</url>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/autodetection/SourcesAutoDetector.java</url>
           <line>14</line>
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java</url>
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableModel.java</url>
           <line>54</line>
           <properties />
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableBuilder.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>242</line>
           <properties />
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java</url>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="134" />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/lookup/LookupElementBuilder.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="226" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="135" />
+      <option name="time" value="227" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-        <watch expression="settingsService.getParameterMap()" language="JAVA" />
-        <watch expression="settingsService.setParameterMap(parameterMapNow);" language="JAVA" />
+        <watch expression="completion" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1101,402 +1646,464 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/RenameRefactoringListener.java">
+    <entry file="file://$USER_HOME$/idea/idea2/xml/xml-analysis-impl/src/com/intellij/codeInsight/daemon/impl/analysis/XmlHighlightVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="8805">
+          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/codeInsight/navigation/actions/GotoDeclarationHandler.class">
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPathTest.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsInspection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="24" column="62" lean-forward="false" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/DojoDeclarationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/application/impl/ApplicationImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="143" column="119" lean-forward="false" selection-start-line="143" selection-start-column="119" selection-end-line="143" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/progress/impl/CoreProgressManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/ImportGotoDeclarationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/DojoModuleFileResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="174" column="27" lean-forward="false" selection-start-line="172" selection-start-column="19" selection-end-line="174" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/AMDPsiUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="439" column="59" lean-forward="false" selection-start-line="439" selection-start-column="59" selection-end-line="439" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/AMDValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/progress/impl/ProgressManagerImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="238" lean-forward="false" selection-start-line="11" selection-start-column="238" selection-end-line="11" selection-end-column="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/autodetection/SourcesAutoDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="82">
+          <caret line="103" column="11" lean-forward="false" selection-start-line="103" selection-start-column="11" selection-end-line="103" selection-end-column="11" />
           <folding>
-            <element signature="e#1922#1923#0" expanded="false" />
-            <element signature="e#1986#1987#0" expanded="false" />
+            <element signature="e#3709#3710#0" expanded="false" />
+            <element signature="e#3746#3747#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/NEJSettingsConfigurable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="46" column="6" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/NearestAMDImportLocator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="-1307">
+          <caret line="53" column="77" lean-forward="false" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportResolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/ui/ComponentWithBrowseButton.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="128" column="16" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/AddExceptionQuickFix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="58" lean-forward="false" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/components/StorageScheme.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableHead.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettings.form" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/options/UnnamedConfigurable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/openapi.jar!/com/intellij/openapi/options/Configurable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleLexer.flex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3480">
-          <caret line="250" column="41" lean-forward="false" selection-start-line="250" selection-start-column="41" selection-end-line="250" selection-end-column="41" />
+        <state relative-caret-position="675">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#6275#6276#0" expanded="false" />
-            <element signature="e#6349#6350#0" expanded="false" />
+            <element signature="e#806#823#0" expanded="false" />
+            <element signature="e#2473#2481#0" expanded="false" />
+            <element signature="e#6280#6281#0" expanded="false" />
+            <element signature="e#6354#6355#0" expanded="false" />
+            <element signature="e#6483#6500#0" expanded="false" />
+            <element signature="e#8687#8696#0" expanded="false" />
+            <element signature="e#10870#10879#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/components/DojoSettingsDetectionComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-887">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/AMDImportOrganizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortedPsiElementAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortingResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="226" column="25" lean-forward="true" selection-start-line="226" selection-start-column="25" selection-end-line="226" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#2225#2226#0" expanded="false" />
-            <element signature="e#2263#2264#0" expanded="false" />
-            <element signature="e#2401#2402#0" expanded="false" />
-            <element signature="e#2456#2457#0" expanded="false" />
+            <element signature="e#2181#3288#0" expanded="false" />
+            <element signature="e#3287#3288#0" expanded="false" />
+            <element signature="e#4265#4983#0" expanded="false" />
+            <element signature="e#4982#4983#0" expanded="false" />
+            <element signature="e#8093#8111#0" expanded="false" />
+            <element signature="e#8165#8630#0" expanded="false" />
+            <element signature="e#8629#8630#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/AMDImportOrganizer.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/inspections/JSUnusedLocalSymbolsInspection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.form">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/NearestAMDImportLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="143" column="13" lean-forward="false" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/options/newEditor/SettingsEditor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="373" column="0" lean-forward="false" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/icons/plus.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2217">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/icons/minu.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/icons/TableToolTipsDemo.jnlp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/javax/swing/JTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="3744" column="20" lean-forward="false" selection-start-line="3744" selection-start-column="6" selection-end-line="3744" selection-end-column="21" />
-          <folding>
-            <element signature="e#144207#144208#0" expanded="false" />
-            <element signature="e#144239#144240#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/com/intellij/openapi/options/ex/ConfigurableCardPanel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="149">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="128" column="16" lean-forward="false" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-          <folding>
-            <element signature="e#4345#4346#0" expanded="false" />
-            <element signature="e#4393#4394#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#733#734#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/core-impl/src/com/intellij/openapi/progress/util/AbstractProgressIndicatorBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar!/sun/security/ssl/SSLSocketImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/net/SocketOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/util/src/com/intellij/util/lang/UrlClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/awt/datatransfer/MimeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/awt/datatransfer/DataFlavor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="500" column="0" lean-forward="false" selection-start-line="500" selection-start-column="0" selection-end-line="500" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/lwawt/macosx/CDataTransferer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="203" column="0" lean-forward="false" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar!/sun/awt/datatransfer/DataTransferer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="1100" column="0" lean-forward="false" selection-start-line="1100" selection-start-column="0" selection-end-line="1100" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/validation/JSAnnotatingVisitor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathLookUpElemGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="49" column="61" lean-forward="false" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/InsertHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/netease/NEJ/core/define/DefineDepPathTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionVariant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionProgressIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29761#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4748#4888#0" expanded="false" />
+            <element signature="e#4887#4888#0" expanded="false" />
+            <element signature="e#7473#7474#0" expanded="false" />
+            <element signature="e#7501#7502#0" expanded="false" />
+            <element signature="e#10977#10978#0" expanded="false" />
+            <element signature="e#11020#11021#0" expanded="false" />
+            <element signature="e#11874#11875#0" expanded="false" />
+            <element signature="e#11951#11952#0" expanded="false" />
+            <element signature="e#12211#12212#0" expanded="false" />
+            <element signature="e#12304#12305#0" expanded="false" />
+            <element signature="e#12351#12352#0" expanded="false" />
+            <element signature="e#12393#12394#0" expanded="false" />
+            <element signature="e#12426#12427#0" expanded="false" />
+            <element signature="e#12457#12458#0" expanded="false" />
+            <element signature="e#12506#12507#0" expanded="false" />
+            <element signature="e#12535#12536#0" expanded="false" />
+            <element signature="e#12586#12587#0" expanded="false" />
+            <element signature="e#12612#12613#0" expanded="false" />
+            <element signature="e#12647#12648#0" expanded="false" />
+            <element signature="e#12672#12673#0" expanded="false" />
+            <element signature="e#14240#14241#0" expanded="false" />
+            <element signature="e#14308#14309#0" expanded="false" />
+            <element signature="e#17776#17777#0" expanded="false" />
+            <element signature="e#17808#17809#0" expanded="false" />
+            <element signature="e#21761#21762#0" expanded="false" />
+            <element signature="e#21786#21787#0" expanded="false" />
+            <element signature="e#21826#21827#0" expanded="false" />
+            <element signature="e#21850#21851#0" expanded="false" />
+            <element signature="e#22215#22216#0" expanded="false" />
+            <element signature="e#22270#22271#0" expanded="false" />
+            <element signature="e#22314#22315#0" expanded="false" />
+            <element signature="e#22379#22380#0" expanded="false" />
+            <element signature="e#28855#28856#0" expanded="false" />
+            <element signature="e#28906#28907#0" expanded="false" />
+            <element signature="e#28962#28963#0" expanded="false" />
+            <element signature="e#28994#28995#0" expanded="false" />
+            <element signature="e#29051#29052#0" expanded="false" />
+            <element signature="e#29083#29084#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/platform-impl/src/com/intellij/openapi/progress/impl/ProgressManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#8369#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/completion/JSCompletionContributor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/template/impl/LiveTemplateCompletionContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/psi/PsiReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/lookup/LookupElementBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4125">
+          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/LegacyCompletionContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/core-impl/src/com/intellij/psi/impl/source/resolve/reference/ReferenceProvidersRegistryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/psi/PsiReferenceBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#6693#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/platform-impl/src/com/intellij/openapi/application/impl/ApplicationImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="901" column="0" lean-forward="false" selection-start-line="901" selection-start-column="0" selection-end-line="901" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#2469#2484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,7 +2148,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>IntelliJ IDEA Community Edition IC-162.2228.15</last-edited>
+          <last-edited>IntelliJ IDEA IU</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1558,7 +2165,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

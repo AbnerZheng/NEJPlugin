@@ -1,6 +1,5 @@
 package com.netease.NEJ.core.settings;
 
-import com.netease.NEJ.core.amd.naming.NameException;
 import com.intellij.openapi.components.*;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
@@ -9,7 +8,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 
 @State(
@@ -204,31 +202,6 @@ public class NEJSettings implements PersistentStateComponent<NEJSettings>
     public void setSingleQuotedModuleIDs(boolean aSingleQuotedModuleIDs) {
         singleQuotedModuleIDs = aSingleQuotedModuleIDs;
     }
-
-    public String upgrade()
-    {
-        String fromVersion = "";
-        if(version != null)
-        {
-            fromVersion = " from " + version;
-        }
-
-        // any version 0.6 and earlier
-        if(version == null || version.equals("0.6"))
-        {
-            for(final Map.Entry<String, String> entry : amdImportNamingExceptions.entrySet())
-            {
-                amdImportNamingExceptionsList.add(entry.getKey() + "(" + entry.getValue());
-            }
-            amdImportNamingExceptions = new LinkedHashMap<String, String>();
-
-            version = CURRENT_VERSION;
-            return "Needs More Dojo has upgraded your settings " + fromVersion + " to version " + CURRENT_VERSION;
-        }
-
-        return null;
-    }
-
     public List<String> getAmdImportNamingExceptionsList() {
         return amdImportNamingExceptionsList;
     }
@@ -237,15 +210,4 @@ public class NEJSettings implements PersistentStateComponent<NEJSettings>
         this.amdImportNamingExceptionsList = amdImportNamingExceptionsList;
     }
 
-    public List<NameException> getNamingExceptionList()
-    {
-        List<NameException> results = new ArrayList<NameException>();
-        for(String entry : amdImportNamingExceptionsList)
-        {
-            String[] items = entry.split("\\(");
-            results.add(new NameException(items[0], items[1]));
-        }
-
-        return results;
-    }
 }

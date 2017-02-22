@@ -2,119 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09afb05-1297-4b53-9f49-0a1acbb3235c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/netease/NEJ/core/define/DefineDepPathTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineStatement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/HighlightingUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/JSUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableBuilder.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/AMDImport.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/AMDImport.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/CompletionCallback.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/CompletionCallback.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/autodetection/SourcesAutoDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/autodetection/SourcesAutoDetector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/DefineResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/DefineResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/NearestAMDImportLocator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/NearestAMDImportLocator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/AMDImportOrganizer.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/AMDImportOrganizer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortItem.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortedPsiElementAdapter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortedPsiElementAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/define/organizer/SortingResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/define/organizer/SortingResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/AttachPointResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/AttachPointResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/DojoModuleFileResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/DojoModuleFileResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/SourceLibrary.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/SourceLibrary.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/filesystem/SourcesLocator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/filesystem/SourcesLocator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportCreator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportCreator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportReorderer.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportReorderer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportUpdater.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/ImportUpdater.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/InvalidDefineException.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/InvalidDefineException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/UnusedImportBlockEntry.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/UnusedImportBlockEntry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/UnusedImportsRemover.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/UnusedImportsRemover.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/visitors/UnusedImportsRemovalVisitor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/importing/visitors/UnusedImportsRemovalVisitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/MismatchedImportsDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/MismatchedImportsDetector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/MismatchedImportsDetectorCache.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/MismatchedImportsDetectorCache.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameException.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/NameException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/naming/NameResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/naming/NameResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/AMDValidator.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/AMDValidator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareResolver.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/DeclareResolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/DeclareStatementItems.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/DeclareStatementItems.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/TemplatedWidgetUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/TemplatedWidgetUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/CyclicDependencyDetector.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/CyclicDependencyDetector.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/DependencyNode.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/DependencyNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/objectmodel/cycledetection/DetectionResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/objectmodel/cycledetection/DetectionResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/AMDPsiUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/psi/AMDPsiUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/psi/JSMethodLookupVisitor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/amd/psi/JSMethodLookupVisitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/ClassToUtilConverter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/ClassToUtilConverter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/MatchResult.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/MatchResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/ModuleImporter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/ModuleImporter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/UtilFinder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/UtilFinder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/refactoring/UtilToClassConverter.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/refactoring/UtilToClassConverter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/FileUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/FileUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/PsiFileUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/PsiFileUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/PsiUtil.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/core/util/PsiUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/AddNewImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/AddNewImportAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ConvertToClassAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ConvertToClassAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ConvertToUtilAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ConvertToUtilAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/DeleteAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/DeleteAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/DeleteSingleImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/DeleteSingleImportAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/FindCyclicDependenciesAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/FindCyclicDependenciesAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/JavaScriptAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/JavaScriptAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/JumpToAttachPointAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/JumpToAttachPointAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/MoveImportDownAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/MoveImportDownAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/MoveImportUpAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/MoveImportUpAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/OrganizeAMDImportsAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/OrganizeAMDImportsAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/ReorderAMDImportAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/ReorderAMDImportAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToBeginningAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToBeginningAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/SendToEndAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/SendToEndAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/TogglePathSyntaxAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/TogglePathSyntaxAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/actions/UnusedImportsAction.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/actions/UnusedImportsAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/components/DojoSettingsDetectionComponent.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/components/DojoSettingsDetectionComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsListTableBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsListTableBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsTableBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ExceptionsTableModel.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/configurable/ExceptionsTableModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.form" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/NEJSettingsConfigurable.form" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/NEJSettingsConfigurable.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableHead.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableHead.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/ParameterTableModel.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/dialog/AddNewImportSelectionDialog.form" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/dialog/AddNewImportSelectionDialog.form" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/dialog/AddNewImportSelectionDialog.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/dialog/AddNewImportSelectionDialog.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/AddExceptionQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/AddExceptionQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/CyclicDependencyInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/CyclicDependencyInspection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/CyclicDependencyProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/CyclicDependencyProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/DojoInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/DojoInspection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/DojoUnresolvedVariableInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/DojoUnresolvedVariableInspection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/IgnoreImportQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/IgnoreImportQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsInspection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/MismatchedImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/MismatchedImportsQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/RemoveImportQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/RemoveImportQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/RemoveUnusedImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/RemoveUnusedImportsQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/SwapImportsQuickFix.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/SwapImportsQuickFix.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/UnusedImportsInspection.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/UnusedImportsInspection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/inspections/UnusedImportsProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/inspections/UnusedImportsProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleBuilder.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleEditorProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleEditorProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/modules/DojoToolkitModuleType.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/modules/DojoToolkitModuleType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/MoveRefactoringListener.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/MoveRefactoringListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/MoveRefactoringProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/MoveRefactoringProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/RenameRefactoringListener.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/RenameRefactoringListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/refactoring/RenameRefactoringProvider.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/refactoring/RenameRefactoringProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/AttachPointGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/AttachPointGotoDeclarationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/DojoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/DojoDeclarationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/ImportGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/ImportGotoDeclarationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/MethodGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/MethodGotoDeclarationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/NlsLookupReference.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/NlsLookupReference.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/NlsLookupReferenceContributor.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/NlsLookupReferenceContributor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/reference/ThisInheritedGotoDeclarationHandler.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/reference/ThisInheritedGotoDeclarationHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java" afterPath="$PROJECT_DIR$/src/old_do_more_dojo/intellij/toolwindows/FindCyclicDependenciesToolWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NEJPlugin.iml" afterPath="$PROJECT_DIR$/NEJPlugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
     </list>
     <ignored path="NEJPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -136,14 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefinePathReference.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DefinePathReference.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="100">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <element signature="e#2469#2484#0" expanded="true" />
+                <element signature="e#2565#2580#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Iconable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/openapi/util/Iconable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,28 +57,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefineDepPath.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefineDepPath.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1062">
-              <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="220">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#3629#3630#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#3682#3683#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompletionData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/codeInsight/completion/CompletionData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4125">
-              <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -189,7 +78,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#5890#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,7 +91,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="795">
               <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#4717#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1811#1812#0" expanded="false" />
+                <element signature="e#1878#1879#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,7 +126,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1425">
               <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#5473#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -240,7 +140,27 @@
             <state relative-caret-position="180">
               <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
-                <element signature="e#0#6693#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2213#2214#0" expanded="false" />
+                <element signature="e#2256#2257#0" expanded="false" />
+                <element signature="e#2661#2662#0" expanded="false" />
+                <element signature="e#2687#2688#0" expanded="false" />
+                <element signature="e#2933#2934#0" expanded="false" />
+                <element signature="e#2995#2996#0" expanded="false" />
+                <element signature="e#3056#3057#0" expanded="false" />
+                <element signature="e#3083#3084#0" expanded="false" />
+                <element signature="e#4398#4399#0" expanded="false" />
+                <element signature="e#4421#4422#0" expanded="false" />
+                <element signature="e#4583#4584#0" expanded="false" />
+                <element signature="e#4614#4615#0" expanded="false" />
+                <element signature="e#4670#4671#0" expanded="false" />
+                <element signature="e#4704#4705#0" expanded="false" />
+                <element signature="e#6465#6466#0" expanded="false" />
+                <element signature="e#6497#6498#0" expanded="false" />
+                <element signature="e#6561#6562#0" expanded="false" />
+                <element signature="e#6593#6594#0" expanded="false" />
+                <element signature="e#6639#6640#0" expanded="false" />
+                <element signature="e#6690#6691#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1349,7 +1269,7 @@
       <workItem from="1487561176534" duration="1693000" />
       <workItem from="1487604572635" duration="372000" />
       <workItem from="1487647317309" duration="29503000" />
-      <workItem from="1487755166896" duration="1155000" />
+      <workItem from="1487755166896" duration="3205000" />
     </task>
     <servers />
   </component>
@@ -1374,7 +1294,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158084000" />
+    <option name="totallyTimeSpent" value="160134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1402,7 +1322,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33150685" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33150685" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1411,7 +1331,7 @@
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31506848" sideWeight="0.48322147" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.49030694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27221325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1607,7 +1527,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java</url>
-          <line>93</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="221" />
         </line-breakpoint>
@@ -1619,21 +1539,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java</url>
-          <line>42</line>
+          <line>43</line>
           <properties />
-          <option name="timeStamp" value="225" />
+          <option name="timeStamp" value="228" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java</url>
-          <line>58</line>
+          <line>59</line>
           <properties />
-          <option name="timeStamp" value="226" />
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="231" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="227" />
+      <option name="time" value="232" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
@@ -1646,13 +1578,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/idea/idea2/xml/xml-analysis-impl/src/com/intellij/codeInsight/daemon/impl/analysis/XmlHighlightVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8805">
-          <caret line="652" column="0" lean-forward="false" selection-start-line="652" selection-start-column="0" selection-end-line="652" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPathTest.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/src.zip!/java/util/HashSet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2029,7 +1954,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#5890#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2037,7 +1965,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#4717#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1811#1812#0" expanded="false" />
+            <element signature="e#1878#1879#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2045,7 +1978,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#5473#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2070,7 +2006,27 @@
         <state relative-caret-position="180">
           <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
-            <element signature="e#0#6693#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2213#2214#0" expanded="false" />
+            <element signature="e#2256#2257#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2687#2688#0" expanded="false" />
+            <element signature="e#2933#2934#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3056#3057#0" expanded="false" />
+            <element signature="e#3083#3084#0" expanded="false" />
+            <element signature="e#4398#4399#0" expanded="false" />
+            <element signature="e#4421#4422#0" expanded="false" />
+            <element signature="e#4583#4584#0" expanded="false" />
+            <element signature="e#4614#4615#0" expanded="false" />
+            <element signature="e#4670#4671#0" expanded="false" />
+            <element signature="e#4704#4705#0" expanded="false" />
+            <element signature="e#6465#6466#0" expanded="false" />
+            <element signature="e#6497#6498#0" expanded="false" />
+            <element signature="e#6561#6562#0" expanded="false" />
+            <element signature="e#6593#6594#0" expanded="false" />
+            <element signature="e#6639#6640#0" expanded="false" />
+            <element signature="e#6690#6691#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2083,26 +2039,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
+    <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/openapi/util/Iconable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#2469#2484#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1062">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="220">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#3682#3683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#2565#2580#0" expanded="true" />
           </folding>
         </state>
       </provider>

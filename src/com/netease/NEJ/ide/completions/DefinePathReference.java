@@ -2,6 +2,7 @@ package com.netease.NEJ.ide.completions;
 
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
+import com.intellij.openapi.util.Iconable;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
@@ -61,7 +62,7 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
             return null;
         }
         if (fileByPath.isDirectory()) {
-            return null; //文件夹现在还是不要解析好
+            return PsiManager.getInstance(myElement.getProject()).findDirectory(fileByPath);
         }
         return PsiManager.getInstance(myElement.getProject()).findFile(fileByPath);
     }
@@ -95,14 +96,16 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
                 final PsiDirectory file1 = instance.findDirectory(file);
                 completionResultSet.add(
                         LookupElementBuilder
-                                .create(file1, file1.getName()).withTypeText(file1.getName())
+                                .create(file1, file1.getName())
+                                .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY))
 
                 );
             } else {
                 final PsiFile file1 = instance.findFile(file);
                 completionResultSet.add(
                         LookupElementBuilder
-                                .create(file1).withTypeText(file1.getName())
+                                .create(file1)
+                        .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY))
 
                 );
             }

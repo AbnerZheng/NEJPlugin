@@ -22,6 +22,7 @@ public class DefineDepPath {
             add("json");
             add("text");
             add("regular");
+            add("css");
         }
     };
     private final Project project;
@@ -92,7 +93,7 @@ public class DefineDepPath {
                 first = strings.get(0);
                 suff = "";
             }
-            if (!complete) {
+            if (!complete || this.fileTypeMark != null) {
                 suff = "";
             }
 

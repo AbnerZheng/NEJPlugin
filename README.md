@@ -12,9 +12,11 @@
 ### 重要
 如果define.js后面的参数没有配置lib, 则还得在nej中配置该路径，否则无法解析base/element这类nej的部件，该路径指向nej库下的src。如上图所示。
 之后我们就能使用了路径跳转的功能,如下:
+
 ![](http://g.recordit.co/k1fKfCTLmV.gif)
 
 ## 路径自动补全
 
 该插件提供了针对define的自动路径补全功能。如下图所示:
+
 ![](/doc/images/filePathAutoComplete.gif)

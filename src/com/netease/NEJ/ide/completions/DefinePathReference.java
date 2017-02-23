@@ -23,8 +23,10 @@ import java.util.List;
  */
 public class DefinePathReference extends PsiReferenceBase<PsiElement> {
 
-    public DefinePathReference(PsiElement element, TextRange textRange) {
+    private boolean complete;
+    public DefinePathReference(PsiElement element, TextRange textRange,boolean complete) {
         super(element, textRange);
+        this.complete = complete;
     }
 
     @NotNull
@@ -41,7 +43,8 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
     @Nullable
     @Override
     public PsiElement resolve() {
-        DefineDepPath defineDepPath = new DefineDepPath(myElement.getText(), myElement.getProject());
+        final String substring = myElement.getText().substring(0, getRangeInElement().getEndOffset());
+        DefineDepPath defineDepPath = new DefineDepPath(substring, myElement.getProject(),complete);
         final Path resolvePath = defineDepPath.getResolvePath();
         if (resolvePath == null) {
             return null;

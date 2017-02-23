@@ -1,6 +1,7 @@
 package com.netease.NEJ.core.settings;
 
 import com.intellij.openapi.components.*;
+import com.intellij.openapi.project.Project;
 import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -208,6 +209,11 @@ public class NEJSettings implements PersistentStateComponent<NEJSettings>
 
     public void setAmdImportNamingExceptionsList(List<String> amdImportNamingExceptionsList) {
         this.amdImportNamingExceptionsList = amdImportNamingExceptionsList;
+    }
+
+    public static NEJSettings getInstance(Project project){
+        NEJSettings settings = ServiceManager.getService(project, NEJSettings.class);
+        return settings;
     }
 
 }

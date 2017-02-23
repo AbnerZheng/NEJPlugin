@@ -1,5 +1,8 @@
 package com.netease.NEJ.core.util;
 
+import com.intellij.lang.javascript.psi.JSArgumentList;
+import com.intellij.lang.javascript.psi.JSArrayLiteralExpression;
+import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiDirectory;
@@ -15,6 +18,23 @@ import java.util.List;
  * Created by abnerzheng on 2017/2/16.
  */
 public class NEJUtil {
+    public static boolean isDefineCall(PsiElement element) {
+        if (element.getParent() instanceof JSArrayLiteralExpression) {
+        }
+        PsiElement prevEl = element.getParent();
+        if (prevEl != null && prevEl instanceof JSArrayLiteralExpression) {
+            prevEl = prevEl.getParent();
+            if (prevEl != null && prevEl instanceof JSArgumentList) {
+                prevEl = prevEl.getParent();
+                if (prevEl != null && prevEl instanceof JSCallExpression) {
+                    String methodExpr = ((JSCallExpression) prevEl).getMethodExpression().getText();
+                    return methodExpr.contains("define");
+                }
+            }
+        }
+
+        return false;
+    }
     public static List<PsiElement> getFilesToCompletion(PsiElement element){
         List<PsiElement> completions = new ArrayList<PsiElement>();
         String value = element.getText().replace("'", "").replace("\"", ""); // 获取文本内容

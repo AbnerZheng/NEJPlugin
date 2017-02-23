@@ -8,6 +8,7 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiReference;
 import com.intellij.psi.PsiReferenceProvider;
 import com.intellij.util.ProcessingContext;
+import com.netease.NEJ.core.util.NEJUtil;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class DefinePathPsiReferenceProvider extends PsiReferenceProvider {
     public PsiReference[] getReferencesByElement(@NotNull PsiElement element, @NotNull ProcessingContext context) {
         //todo 加入NEJ使能按钮
         String path = element.getText();
-        if (!isDefineCall(element)) {
+        if (!NEJUtil.isDefineCall(element)) {
             return PsiReference.EMPTY_ARRAY; //当不是Define调用的时候，直接返回
         }
 
@@ -47,24 +48,5 @@ public class DefinePathPsiReferenceProvider extends PsiReferenceProvider {
         }
         return references.toArray(new PsiReference[references.size()]);
     }
-
-    private boolean isDefineCall(PsiElement element) {
-        if (element.getParent() instanceof JSArrayLiteralExpression) {
-        }
-        PsiElement prevEl = element.getParent();
-        if (prevEl != null && prevEl instanceof JSArrayLiteralExpression) {
-            prevEl = prevEl.getParent();
-            if (prevEl != null && prevEl instanceof JSArgumentList) {
-                prevEl = prevEl.getParent();
-                if (prevEl != null && prevEl instanceof JSCallExpression) {
-                    String methodExpr = ((JSCallExpression) prevEl).getMethodExpression().getText();
-                    return methodExpr.contains("define");
-                }
-            }
-        }
-
-        return false;
-    }
-
 
 }

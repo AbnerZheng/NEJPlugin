@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09afb05-1297-4b53-9f49-0a1acbb3235c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathCompletionConfidence.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java" afterPath="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java" />
     </list>
     <ignored path="NEJPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +44,7 @@
       <file leaf-file-name="DefinePathLookUpElemGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathLookUpElemGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="33">
               <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="false" />
@@ -52,73 +53,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefineDepPath.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-                <element signature="e#1351#1352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefinePathInsertHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefinePathInsertHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="210">
               <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileNameWithoutExtension.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-impl/src/com/intellij/ide/macro/FileNameWithoutExtension.java">
+      <file leaf-file-name="CompletionConfidence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionConfidence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VirtualFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/openapi/vfs/VirtualFile.java">
+      <file leaf-file-name="DefinePathPsiReferenceContributor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="192" column="16" lean-forward="false" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
-              <folding>
-                <element signature="e#7122#7123#0" expanded="true" />
-                <element signature="e#7203#7204#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Document.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/idea/idea2/platform/core-api/src/com/intellij/openapi/editor/Document.java">
+      <file leaf-file-name="ThreeState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/idea/idea2/platform/util/src/com/intellij/util/ThreeState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="163" column="7" lean-forward="false" selection-start-line="163" selection-start-column="7" selection-end-line="163" selection-end-column="7" />
+            <state relative-caret-position="60">
+              <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
-                <element signature="e#0#12314#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InsertHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/InsertHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#890#0" expanded="false" />
+                <element signature="e#0#943#0" expanded="false" />
+                <element signature="e#751#752#0" expanded="false" />
+                <element signature="e#784#785#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -127,12 +100,21 @@
       <file leaf-file-name="DefinePathPsiReferenceProvider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
-                <marker date="1487842482000" expanded="true" signature="788:1797" ph="{...}" />
-                <marker date="1487842482000" expanded="true" signature="1031:1098" ph="//..." />
+                <marker date="1487857192000" expanded="true" signature="1081:1148" ph="//..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NEJUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,8 +122,18 @@
       <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="46" column="177" lean-forward="false" selection-start-line="46" selection-start-column="177" selection-end-line="46" selection-end-column="177" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefinePathCompletionConfidence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathCompletionConfidence.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -195,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettings.form" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/amd/importing/ImportResolver.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/components/DojoSettingsDetectionComponent.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.form" />
@@ -221,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/settings/NEJSettingsConfigurable.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/ParameterTableModel.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/configurable/ParameterTableModel.java" />
-        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/liveTemplates/javascript.xml" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/liveTemplates/javascript_iterations.xml" />
         <option value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/languageService/typescript/node.d.ts" />
@@ -241,11 +231,13 @@
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/settings/NEJSettings.java" />
         <option value="$PROJECT_DIR$/test/com/netease/NEJ/core/define/NEJTestCase.java" />
         <option value="$PROJECT_DIR$/test/com/netease/NEJ/core/define/DefinePathSettingTest.java" />
-        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/define/DefineDepPath.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java" />
         <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathCompletionConfidence.java" />
       </list>
     </option>
   </component>
@@ -402,6 +394,64 @@
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NEJPlugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -419,7 +469,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="ScriptingLibr&#9;PSI&#9;JAVA://com.intellij.javascript.nodejs.library.NodeJsCoreLibraryManager#setScriptingLibraryModel&#10;CodeInsightFixtureTestCase&#9;PSI&#9;JAVA://com.intellij.testFramework.fixtures.CodeInsightFixtureTestCase&#10;PropertyReferenceBase&#9;FILE&#9;file:///Users/abnerzheng/idea/idea2/plugins/properties/properties-psi-impl/src/com/intellij/lang/properties/references/PropertyReferenceBase.java&#10;findImplicitExtension&#9;PSI&#9;JAVA://com.intellij.javascript.JSFileReference#findImplicitExtension&#10;plugi&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plugin&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;ProjectComponent&#9;PSI&#9;JAVA://com.intellij.openapi.components.ProjectComponent&#10;NEJSettingsConfigurable&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java&#10;w&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java&#10;plugin.&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plug&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;getMergedPath&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;merge&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;SimpleIcon&#9;PSI&#9;JAVA://com.simpleplugin.SimpleIcons&#10;SimpleIcons&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/simpleplugin/SimpleIcons.java&#10;bnf&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEI/Simple.bnf&#10;ideAc&#9;PSI&#9;JAVA://com.intellij.openapi.actionSystem.IdeActions" />
+    <property name="SearchEverywhereHistoryKey" value="CompletionConfidence&#9;PSI&#9;JAVA://com.intellij.codeInsight.completion.CompletionConfidence&#10;ScriptingLibr&#9;PSI&#9;JAVA://com.intellij.javascript.nodejs.library.NodeJsCoreLibraryManager#setScriptingLibraryModel&#10;CodeInsightFixtureTestCase&#9;PSI&#9;JAVA://com.intellij.testFramework.fixtures.CodeInsightFixtureTestCase&#10;PropertyReferenceBase&#9;FILE&#9;file:///Users/abnerzheng/idea/idea2/plugins/properties/properties-psi-impl/src/com/intellij/lang/properties/references/PropertyReferenceBase.java&#10;findImplicitExtension&#9;PSI&#9;JAVA://com.intellij.javascript.JSFileReference#findImplicitExtension&#10;plugi&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plugin&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;ProjectComponent&#9;PSI&#9;JAVA://com.intellij.openapi.components.ProjectComponent&#10;NEJSettingsConfigurable&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/configurable/NEJSettingsConfigurable.java&#10;w&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEJ/intellij/toolwindows/FindCyclicDependenciesToolWindow.java&#10;plugin.&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;plug&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/resources/META-INF/plugin.xml&#10;getMergedPath&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;merge&#9;PSI&#9;JAVA://com.chrisfolger.needsmoredojo.core.amd.naming.NameResolver#getMergedPath&#10;SimpleIcon&#9;PSI&#9;JAVA://com.simpleplugin.SimpleIcons&#10;SimpleIcons&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/simpleplugin/SimpleIcons.java&#10;bnf&#9;FILE&#9;file:///Users/abnerzheng/netease/NEJPlugin/src/com/netease/NEI/Simple.bnf&#10;ideAc&#9;PSI&#9;JAVA://com.intellij.openapi.actionSystem.IdeActions" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/simpleplugin" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
@@ -1061,7 +1111,7 @@
       <workItem from="1487561176534" duration="1693000" />
       <workItem from="1487604572635" duration="372000" />
       <workItem from="1487647317309" duration="29503000" />
-      <workItem from="1487755166896" duration="24813000" />
+      <workItem from="1487755166896" duration="26561000" />
     </task>
     <servers />
   </component>
@@ -1098,7 +1148,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181742000" />
+    <option name="totallyTimeSpent" value="183490000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1111,7 +1161,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1126,7 +1176,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39285713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3561644" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3561644" sideWeight="0.88045233" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1335,11 +1385,23 @@
           <properties />
           <option name="timeStamp" value="241" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathCompletionConfidence.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="261" />
+      <option name="time" value="263" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
@@ -1355,38 +1417,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/debug/NodeDebugRunConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/debug/NodeLocalDebugRunProfileState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/execution/NodeRunConfigurationLocationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/interpreter/NodeJsInterpreterRef.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/NodeJsCoreLibraryUtil.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1706,35 +1736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1487842482000" expanded="true" signature="788:1797" ph="{...}" />
-            <marker date="1487842482000" expanded="true" signature="1031:1098" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/InsertHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1761,8 +1762,56 @@
         <state relative-caret-position="147">
           <caret line="192" column="16" lean-forward="false" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="16" />
           <folding>
-            <element signature="e#7122#7123#0" expanded="true" />
-            <element signature="e#7203#7204#0" expanded="true" />
+            <element signature="e#0#27385#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4547#4548#0" expanded="false" />
+            <element signature="e#4573#4574#0" expanded="false" />
+            <element signature="e#5882#5883#0" expanded="false" />
+            <element signature="e#5972#5973#0" expanded="false" />
+            <element signature="e#6256#6257#0" expanded="false" />
+            <element signature="e#6321#6322#0" expanded="false" />
+            <element signature="e#8941#8942#0" expanded="false" />
+            <element signature="e#8963#8964#0" expanded="false" />
+            <element signature="e#9568#9569#0" expanded="false" />
+            <element signature="e#9594#9595#0" expanded="false" />
+            <element signature="e#10151#10152#0" expanded="false" />
+            <element signature="e#10172#10173#0" expanded="false" />
+            <element signature="e#12134#12135#0" expanded="false" />
+            <element signature="e#12205#12206#0" expanded="false" />
+            <element signature="e#17329#17575#0" expanded="false" />
+            <element signature="e#17574#17575#0" expanded="false" />
+            <element signature="e#18075#18305#0" expanded="false" />
+            <element signature="e#18304#18305#0" expanded="false" />
+            <element signature="e#18722#18723#0" expanded="false" />
+            <element signature="e#18763#18764#0" expanded="false" />
+            <element signature="e#18813#18814#0" expanded="false" />
+            <element signature="e#18856#18857#0" expanded="false" />
+            <element signature="e#18907#18908#0" expanded="false" />
+            <element signature="e#18942#18943#0" expanded="false" />
+            <element signature="e#19878#19879#0" expanded="false" />
+            <element signature="e#19921#19922#0" expanded="false" />
+            <element signature="e#23432#23433#0" expanded="false" />
+            <element signature="e#23503#23504#0" expanded="false" />
+            <element signature="e#25120#25121#0" expanded="false" />
+            <element signature="e#25168#25169#0" expanded="false" />
+            <element signature="e#25453#25454#0" expanded="false" />
+            <element signature="e#25479#25480#0" expanded="false" />
+            <element signature="e#25531#25532#0" expanded="false" />
+            <element signature="e#25579#25580#0" expanded="false" />
+            <element signature="e#25754#25755#0" expanded="false" />
+            <element signature="e#25793#25794#0" expanded="false" />
+            <element signature="e#26211#26212#0" expanded="false" />
+            <element signature="e#26248#26249#0" expanded="false" />
+            <element signature="e#26294#26295#0" expanded="false" />
+            <element signature="e#26329#26330#0" expanded="false" />
+            <element signature="e#26371#26372#0" expanded="false" />
+            <element signature="e#26425#26426#0" expanded="false" />
+            <element signature="e#26454#26455#0" expanded="false" />
+            <element signature="e#26480#26481#0" expanded="false" />
+            <element signature="e#26522#26523#0" expanded="false" />
+            <element signature="e#26544#26545#0" expanded="false" />
+            <element signature="e#27123#27124#0" expanded="false" />
+            <element signature="e#27180#27181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1771,7 +1820,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#0#1390#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1036#1037#0" expanded="false" />
+            <element signature="e#1084#1085#0" expanded="false" />
+            <element signature="e#1155#1156#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1787,16 +1843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathLookUpElemGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1808,10 +1854,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/util/src/com/intellij/util/ThreeState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#943#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathInsertHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="210">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathLookUpElemGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceContributor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/idea/idea2/platform/lang-api/src/com/intellij/codeInsight/completion/CompletionConfidence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="46" column="177" lean-forward="false" selection-start-line="46" selection-start-column="177" selection-end-line="46" selection-end-column="177" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathPsiReferenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <marker date="1487857192000" expanded="true" signature="1081:1148" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/ide/completions/DefinePathCompletionConfidence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/netease/NEJ/core/util/NEJUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

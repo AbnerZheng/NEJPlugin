@@ -44,6 +44,7 @@
         <!--<inspectionToolProvider implementation="CyclicDependencyProvider"/>-->
 
         <projectConfigurable implementation="com.netease.NEJ.ide.configurable.NEJSettingsConfigurable"></projectConfigurable>
+        <completion.confidence language="JavaScript" implementationClass="com.netease.NEJ.ide.completions.DefinePathCompletionConfidence" order="before javaSkipAutopopupInStrings"></completion.confidence>
 
         <psi.referenceContributor
             implementation="com.netease.NEJ.ide.completions.DefinePathPsiReferenceContributor"/>

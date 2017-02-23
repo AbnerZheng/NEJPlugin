@@ -27,6 +27,12 @@ public class DefineDepPath {
     };
     private final Project project;
     private String fileTypeMark;
+
+    public boolean isShouldntHaveExt() {
+        return shouldntHaveExt;
+    }
+
+    private boolean shouldntHaveExt;
     private Path pathSol;
 
     public DefineDepPath(String path, Project project) {
@@ -35,6 +41,7 @@ public class DefineDepPath {
 
     public DefineDepPath(String path, Project project, boolean complete) {
         path = path.replaceAll("\"", "").replaceAll("'", "");
+        this.shouldntHaveExt = false;
         this.pathOri = path;
         this.project = project;
         resolve(complete);
@@ -76,7 +83,7 @@ public class DefineDepPath {
             }
         }
 
-        if (first.equals("..") || first.equals(".") || first.equals("")) {//绝对或相对路径
+        if (first.equals("..") || first.equals(".") || first.equals("")) {//绝对或相对路径, 一定不可能使用{pro}之类的路径
             this.pathSol = Paths.get(String.join("/", strings));
             return;
         } else {
@@ -92,6 +99,10 @@ public class DefineDepPath {
                 }
                 first = strings.get(0);
                 suff = "";
+            }else{
+                if(this.fileTypeMark == null){ //说明又没加头，没有使用{pro}这种语法,此时不应该有后缀
+                    this.shouldntHaveExt = true; //说明使用了{pro}这种
+                }
             }
             if (!complete || this.fileTypeMark != null) {
                 suff = "";

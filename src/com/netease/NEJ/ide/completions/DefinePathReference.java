@@ -95,12 +95,13 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
         for (VirtualFile file : fileByPath.getChildren()) {
 //                            .withTypeText(file.getName())
 
-            if (file.isDirectory()) {
+            if (file.isDirectory()) {//文件夹应该都要
                 final PsiDirectory file1 = instance.findDirectory(file);
                 completionResultSet.add(
                         LookupElementBuilder
                                 .create(file1, file1.getName())
                                 .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY))
+                                .withInsertHandler(new DefinePathInsertHandler())
 
                 );
             } else {
@@ -108,7 +109,7 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
                 completionResultSet.add(
                         LookupElementBuilder
                                 .create(file1)
-                        .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY))
+                        .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY)).withInsertHandler(new DefinePathInsertHandler(defineDepPath.isShouldntHaveExt()))
 
                 );
             }

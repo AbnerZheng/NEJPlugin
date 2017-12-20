@@ -5,12 +5,13 @@
     <vendor email="abnerzheng@gmail.com" url="">Abner Zheng</vendor>
 
     <description><![CDATA[
-            NEJ support for Intellij IDEA/WebStorm
+            happy coding with nej!
+            <br>如果有任何使用上的问题，可以联系:
             <br>
+            PoPo: hzwangdong5, mail: hzwangdong5@crop.netease.com (目前维护)
+            PoPo: hzzhenglu, mail: abnerzheng@gmail.com
             <br>
-            目前还在开发中，有问题/需求请联系我。<br>
-            PoPo: hzzhenglu, mail: abnerzheng@gmail.com <br>
-            感谢Do more Dojo 插件，它给了我很多帮助,这里大量的代码都借鉴于它
+
       ]]></description>
 
     <change-notes><![CDATA[
@@ -18,15 +19,6 @@
             <ul>
                 <li>支持NEJ define路径解析</li>
             </ul>
-            <b>0.2</b>
-            <ul>
-                <li>支持NEJ define路径补全, 通过ctrl+space触发</li>
-            </ul>
-            <b>0.3</b>
-            <ul>
-                <li>实现和NodeJS一样的路径补全功能，自动触发</li>
-            </ul>
-
       ]]>
     </change-notes>
 

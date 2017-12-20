@@ -5,7 +5,7 @@ buildscript {
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.0.20"
+    id "org.jetbrains.intellij" version "0.1.10"
 }
 
 apply plugin: 'idea'
@@ -13,10 +13,8 @@ apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
 intellij {
-    version 'IC-14.1.4' //IntelliJ IDEA dependency
-    plugins 'coverage' //Bundled plugin dependencies
+    version 'IU-LATEST-TRUNK-SNAPSHOT'
+    plugins = ['JavaScriptLanguage', 'CSS', 'uml']
     pluginName 'NEJPlugin'
 }
 
-group 'org.jetbrains'
-version '1.2' // Plugin version

@@ -1,8 +1,7 @@
 package com.netease.NEJ.core.util;
 
-import com.intellij.lang.javascript.psi.JSArgumentList;
-import com.intellij.lang.javascript.psi.JSArrayLiteralExpression;
-import com.intellij.lang.javascript.psi.JSCallExpression;
+import com.intellij.lang.javascript.psi.*;
+import com.intellij.lang.javascript.psi.impl.JSCallExpressionImpl;
 import com.intellij.openapi.vfs.LocalFileSystem;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.psi.PsiDirectory;
@@ -35,13 +34,37 @@ public class NEJUtil {
 
         return false;
     }
-    public static List<PsiElement> getFilesToCompletion(PsiElement element){
+
+    public static boolean isDefineCallParamer(PsiElement element) {
+        PsiElement parent = element.getParent();
+        if (!(parent instanceof JSParameterList)) {
+            return false;
+        }
+
+        parent = parent.getParent();
+        if(!(parent instanceof JSFunctionExpression)){ // 对instanceOf检查来说，null没有必要检查
+            return false;
+        }
+        parent = parent.getParent();
+        if(!(parent instanceof JSArgumentList)){
+            return false;
+        }
+        parent = parent.getParent();
+        if(!(parent instanceof JSCallExpression)){
+            return false;
+        }
+        final JSCallExpression parent1 = (JSCallExpression) parent;
+        final String text = parent1.getMethodExpression().getText();
+        return text.equals("define") || text.equals("NEJ.define");
+    }
+
+    public static List<PsiElement> getFilesToCompletion(PsiElement element) {
         List<PsiElement> completions = new ArrayList<PsiElement>();
         String value = element.getText().replace("'", "").replace("\"", ""); // 获取文本内容
         String valuePath = value;
         boolean prefixMark = value.contains("!"); //是否有前缀
 
-        VirtualFile elementFile= element
+        VirtualFile elementFile = element
                 .getContainingFile()
                 .getOriginalFile()
                 .getVirtualFile().getParent();
@@ -58,27 +81,27 @@ public class NEJUtil {
         }
 
         boolean isRelative = valuePath.startsWith(".");
-        if(isRelative){
+        if (isRelative) {
             final LocalFileSystem instance = LocalFileSystem.getInstance();
             final Path path = Paths.get(elementFile.getPath(), valuePath).normalize();
             final String pathString = String.valueOf(path);
             final VirtualFile fileByPath = instance.findFileByPath(pathString);
-            if(fileByPath == null){//不存在
+            if (fileByPath == null) {//不存在
                 final String directory = pathString.subSequence(0, pathString.lastIndexOf('/')).toString(); //获取目录
                 final VirtualFile fileByPath1 = instance.findFileByPath(directory);
-                if(fileByPath1.isDirectory()){
+                if (fileByPath1.isDirectory()) {
                     final VirtualFile[] children = fileByPath1.getChildren();
-                    for(VirtualFile v: children){
-                        if(v.getPath().contains(pathString)){
+                    for (VirtualFile v : children) {
+                        if (v.getPath().contains(pathString)) {
                             final PsiDirectory directory1 = PsiManager.getInstance(element.getProject()).findDirectory(v);
                             completions.add(directory1);
                         }
                     }
                 }
 
-            }else if(fileByPath.isDirectory()){ //是目录
+            } else if (fileByPath.isDirectory()) { //是目录
                 final PsiElement[] children = PsiManager.getInstance(element.getProject()).findDirectory(fileByPath).getChildren();
-                for (PsiElement e: children){
+                for (PsiElement e : children) {
                     completions.add(e);
                 }
             }

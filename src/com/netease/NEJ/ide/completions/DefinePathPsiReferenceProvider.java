@@ -39,13 +39,16 @@ public class DefinePathPsiReferenceProvider extends PsiReferenceProvider {
         if (path.endsWith("'") || path.endsWith("\"")) {
             len--;
         }
-        while (fromIndex != len) {
-            nextIndex = path.indexOf("/", fromIndex + 1);
-            nextIndex = nextIndex == -1 ? len : nextIndex;
-            PsiReference ref = new DefinePathReference(element, new TextRange(fromIndex + 1, nextIndex), nextIndex == len);
-            fromIndex = nextIndex;
-            references.add(ref);
-        }
+//        while (fromIndex != len) {
+//            nextIndex = path.indexOf("/", fromIndex + 1);
+//            nextIndex = nextIndex == -1 ? len : nextIndex;
+//            PsiReference ref = new DefinePathReference(element, new TextRange(fromIndex + 1, nextIndex), nextIndex == len);
+//            fromIndex = nextIndex;
+//            references.add(ref);
+//        }
+        references.add(new DefinePathReference(
+                element, new TextRange(0, element.getTextLength()), true
+        ));
         return references.toArray(new PsiReference[references.size()]);
     }
 

@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.netease.NEJ</id>
     <name>NEJ</name>
-    <version>0.2</version>
+    <version>0.3</version>
     <vendor email="abnerzheng@gmail.com" url="">Abner Zheng</vendor>
 
     <description><![CDATA[
@@ -21,6 +21,10 @@
             <b>0.2</b>
             <ul>
                 <li>支持NEJ define路径补全, 通过ctrl+space触发</li>
+            </ul>
+            <b>0.3</b>
+            <ul>
+                <li>实现和NodeJS一样的路径补全功能，自动触发</li>
             </ul>
 
       ]]>

@@ -2,7 +2,7 @@
 
 # NEJ Plugin
 
-> happy coding with nej.
+> happy coding with nej :smile:
 
 ## 特点
 
@@ -20,22 +20,13 @@
 
 `Plugins`搜索`NEJ Plugin`并安装即可.
 
-## 配置
-
-### Mac
+## 路径变量配置
 
 ![path](./images/setting.gif)
 
+注: 这里不同于[`VSC`](https://code.visualstudio.com/)，没有全局设置的入口。需要给每个工程单独进行设置。
 
-### Windows
-
-注: 路径表示会有所不同
-
-注: 这里不同于`VSC`，没有全局设置的入口。需要给每个工程单独进行设置。
-
-## 使用
-
-### Mac
+## 基本使用
 
 ![path](./images/usage.gif)
 

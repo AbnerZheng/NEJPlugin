@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09afb05-1297-4b53-9f49-0a1acbb3235c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/SimpleLexer.flex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/doc/images/filePathAutoComplete.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/doc/images/find_definejs.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/doc/images/nej_setting.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/idea-flex.skeleton" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jflex-1.7.0-SNAPSHOT.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/out/production/NEJPlugin/META-INF/plugin.xml" />
-      <change beforePath="$PROJECT_DIR$/plan.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
     </list>
     <ignored path="NEJPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,8 +83,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <first_editor relative-caret-position="32">
+                <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -1006,7 +994,7 @@
       <workItem from="1487604572635" duration="372000" />
       <workItem from="1487647317309" duration="29503000" />
       <workItem from="1487755166896" duration="26561000" />
-      <workItem from="1513765330180" duration="15103000" />
+      <workItem from="1513765330180" duration="15772000" />
     </task>
     <servers />
   </component>
@@ -1043,7 +1031,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205896000" />
+    <option name="totallyTimeSpent" value="206565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1647,8 +1635,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <first_editor relative-caret-position="32">
+            <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />

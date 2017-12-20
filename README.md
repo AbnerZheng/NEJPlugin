@@ -1,22 +1,55 @@
-# NEJ support for Intellij IDEA ultimate/ WebStorm
 
-## 如何使用
 
-首先找到定义了define.js的html文件，如![](/doc/images/find_definejs.jpg)
+# NEJ Plugin
 
-其中的代码行
-`<script src="/src/lib/nej/src/define.js?pro=/src/module/&3rd=/src/lib/&rot=/src/"></script>`
-表明我们需要配置pro、3rd、rot这几个参数(具体哪些根据自己的定义)。
-打开`Preserence`,进入`Other Settings -> NEJ setting`. 将这里的参数配置进去。值得注意的是，大多数情况下，不能直接将define.js后面的路径直接拷贝到配置中，这是因为NEJ还依赖于release.conf里面的配置文件进行静态文件路径配置。这里，插件统一以当前工程的路径为根路径。如在我的工程中，src文件的路径为./public/src/，则最终的配置如下所示:
-![](/doc/images/nej_setting.jpg)。
-### 重要
-如果define.js后面的参数没有配置lib, 则还得在nej中配置该路径，否则无法解析base/element这类nej的部件，该路径指向nej库下的src。如上图所示。
-之后我们就能使用了路径跳转的功能,如下:
+> happy coding with nej.
 
-![](http://g.recordit.co/k1fKfCTLmV.gif)
+## 特点
 
-## 路径自动补全
+* 快速导航至依赖文件
+* 多种后缀文件格式的支持，例如jsp,js,php,html,ftl
 
-该插件提供了针对define的自动路径补全功能。如下图所示:
+## 支持
 
-![](/doc/images/filePathAutoComplete.gif)
+> 如果使用上有问题，很有可能是IDE太老导致。建议升级至最新版本，不对过老的IDE版本做兼容
+
+* [WebStorm Lastest Download](https://www.jetbrains.com/webstorm/)   
+* [IntelliJ IDEA Lastest Download](https://www.jetbrains.com/idea/)
+
+## 安装
+
+`Plugins`搜索`NEJ Plugin`并安装即可.
+
+## 配置
+
+### Mac
+
+![path](./images/setting.gif)
+
+
+### Windows
+
+注: 路径表示会有所不同
+
+注: 这里不同于`VSC`，没有全局设置的入口。需要给每个工程单独进行设置。
+
+## 使用
+
+### Mac
+
+![path](./images/usage.gif)
+
+## 反馈
+
+> 使用上如果有任何疑问或者建议，可以直接`popo`戳我.   
+联系方式: hzwangdong5@corp.netease.com
+
+## 感谢
+
+* [AbnerZheng](https://github.com/AbnerZheng/NEJPlugin)
+
+## 开源协议
+
+[MIT](LICENSE)
+
+

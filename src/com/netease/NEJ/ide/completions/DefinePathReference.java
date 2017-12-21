@@ -12,7 +12,6 @@ import com.netease.NEJ.core.util.NEJUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -24,7 +23,8 @@ import java.util.List;
 public class DefinePathReference extends PsiReferenceBase<PsiElement> {
 
     private boolean complete;
-    public DefinePathReference(PsiElement element, TextRange textRange,boolean complete) {
+
+    public DefinePathReference(PsiElement element, TextRange textRange, boolean complete) {
         super(element, textRange);
         this.complete = complete;
     }
@@ -44,7 +44,7 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
     @Override
     public PsiElement resolve() {
         final String substring = myElement.getText().substring(0, getRangeInElement().getEndOffset());
-        DefineDepPath defineDepPath = new DefineDepPath(substring, myElement.getProject(),complete);
+        DefineDepPath defineDepPath = new DefineDepPath(substring, myElement.getProject(), complete);
         final Path resolvePath = defineDepPath.getResolvePath();
         if (resolvePath == null) {
             return null;
@@ -106,17 +106,17 @@ public class DefinePathReference extends PsiReferenceBase<PsiElement> {
                 );
             } else {
                 final PsiFile file1 = instance.findFile(file);
-                completionResultSet.add(
-                        LookupElementBuilder
-                                .create(file1)
-                        .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY)).withInsertHandler(new DefinePathInsertHandler(defineDepPath.isShouldntHaveExt()))
+                if (file1 != null) {
+                    completionResultSet.add(
+                            LookupElementBuilder
+                                    .create(file1)
+                                    .withIcon(file1.getIcon(Iconable.ICON_FLAG_VISIBILITY)).withInsertHandler(new DefinePathInsertHandler(defineDepPath.isShouldntHaveExt()))
 
-                );
+                    );
+                }
+
             }
         }
-
         return completionResultSet.toArray();
-//        String[] result = {"./demo", "./test", "./test.js"};
-//        return result;
     }
 }

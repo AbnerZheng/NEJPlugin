@@ -1,8 +1,5 @@
 package com.netease.NEJ.ide.completions;
 
-import com.intellij.lang.javascript.psi.JSArgumentList;
-import com.intellij.lang.javascript.psi.JSArrayLiteralExpression;
-import com.intellij.lang.javascript.psi.JSCallExpression;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiReference;
@@ -39,13 +36,13 @@ public class DefinePathPsiReferenceProvider extends PsiReferenceProvider {
         if (path.endsWith("'") || path.endsWith("\"")) {
             len--;
         }
-//        while (fromIndex != len) {
-//            nextIndex = path.indexOf("/", fromIndex + 1);
-//            nextIndex = nextIndex == -1 ? len : nextIndex;
-//            PsiReference ref = new DefinePathReference(element, new TextRange(fromIndex + 1, nextIndex), nextIndex == len);
-//            fromIndex = nextIndex;
-//            references.add(ref);
-//        }
+        while (fromIndex != len) {
+            nextIndex = path.indexOf("/", fromIndex + 1);
+            nextIndex = nextIndex == -1 ? len : nextIndex;
+            PsiReference ref = new DefinePathReference(element, new TextRange(fromIndex + 1, nextIndex), nextIndex == len);
+            fromIndex = nextIndex;
+            references.add(ref);
+        }
         references.add(new DefinePathReference(
                 element, new TextRange(0, element.getTextLength()), true
         ));

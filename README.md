@@ -7,6 +7,7 @@
 ## 特点
 
 * 快速导航至依赖文件
+* 智能感知路径依赖
 * 多种后缀文件格式的支持，例如jsp,js,php,html,ftl
 
 ## 支持
@@ -24,15 +25,24 @@
 
 ![path](./images/setting.gif)
 
-注: 这里不同于[`VSC`](https://code.visualstudio.com/)，没有全局设置的入口。需要给每个工程单独进行设置。
+注: 
+
+* 这里不同于[`VSC`](https://code.visualstudio.com/)，没有全局设置的入口。需要给每个工程单独进行设置。
+* 导航`nej`源码，只需要配置变量名为`lib`。值为其真实的源码路径便可。可不用在实际编码中加变量前缀`lib`
 
 ## 基本使用
 
+### 快速导航至依赖文件
+
 ![path](./images/usage.gif)
+
+### 智能感知路径依赖
+
+![path](./images/usage2.gif)
 
 ## 反馈
 
-> 使用上如果有任何疑问或者建议，可以直接`popo`戳我.   
+> 使用上如果有任何疑问或者建议，可以直接`popo`戳我.
 联系方式: hzwangdong5@corp.netease.com
 
 ## 感谢

@@ -1,27 +1,24 @@
 <idea-plugin version="2">
     <id>com.netease.NEJ</id>
     <name>NEJ</name>
-    <version>1.0</version>
+    <version>0.4</version>
     <vendor email="abnerzheng@gmail.com" url="">Abner Zheng</vendor>
 
     <description><![CDATA[
             happy coding with nej!
-            <br>
             <br>如果有任何使用上的问题，可以联系:
             <br>
-            PoPo: hzwangdong5, mail: hzwangdong5@crop.netease.com (目前维护) <br>
+            PoPo: hzwangdong5, mail: hzwangdong5@crop.netease.com (目前维护)
             PoPo: hzzhenglu, mail: abnerzheng@gmail.com
             <br>
 
       ]]></description>
 
     <change-notes><![CDATA[
-            <b>1.0</b>
+            <b>0.1</b>
             <ul>
-                <li>支持NEJ 依赖路径跳转</li>
-                <li>支持NEJ 智能感知路径</li>
+                <li>支持NEJ define路径解析</li>
             </ul>
-
       ]]>
     </change-notes>
 

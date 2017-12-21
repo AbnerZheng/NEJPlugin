@@ -18,6 +18,7 @@
           <component id="71933" class="javax.swing.JTable" binding="parameterTable">
             <constraints/>
             <properties>
+              <fillsViewportHeight value="true"/>
               <updateSelectionOnSort value="false"/>
             </properties>
           </component>

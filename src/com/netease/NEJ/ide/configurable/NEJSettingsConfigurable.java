@@ -30,13 +30,13 @@ public class NEJSettingsConfigurable implements Configurable {
     @Nls
     @Override
     public String getDisplayName() {
-        return "NEJ Setting";
+        return "NEJ Path Configuration";
     }
 
     @Nullable
     @Override
     public String getHelpTopic() {
-        return "Configure to work correcty with NEJ platform";
+        return "Configure to work correct with NEJ platform";
     }
 
     @Nullable

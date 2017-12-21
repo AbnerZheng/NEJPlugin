@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.netease.NEJ</id>
     <name>NEJ</name>
-    <version>0.3</version>
+    <version>0.4</version>
     <vendor email="abnerzheng@gmail.com" url="">Abner Zheng</vendor>
 
     <description><![CDATA[

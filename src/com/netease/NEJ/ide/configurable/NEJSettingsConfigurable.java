@@ -1,5 +1,10 @@
 package com.netease.NEJ.ide.configurable;
 
+import com.intellij.ide.DataManager;
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import com.intellij.openapi.actionSystem.DataContext;
+import com.intellij.openapi.actionSystem.DataKeys;
+import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.options.ConfigurationException;
@@ -43,7 +48,8 @@ public class NEJSettingsConfigurable implements Configurable {
     @Override
     public JComponent createComponent() {
         myComponent = (JComponent) myPanel;
-        project = ProjectManager.getInstance().getOpenProjects()[0];
+        DataContext context = DataManager.getInstance().getDataContext();
+        project = PlatformDataKeys.PROJECT.getData(context);
         settingsService = ServiceManager.getService(project, NEJSettings.class);
         final LinkedHashMap<String, String> parameterMap = settingsService.getParameterMap();
         LinkedHashMap<String, String> parameterMapNow;
